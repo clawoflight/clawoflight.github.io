@@ -47,6 +47,147 @@
 <p>Ich weiß nicht, ob das so scalen wird, notfalls muss ich eine Seite pro Fach einrichten... Aber durchsuchen kann man Seiten zum Glück leicht mit <code>CTRL-F</code>, und schön sind die auch. Ich hoffe, dass wir so mehr von einander lernen können, denn elegante Lösungen findet man oft nur zufällig.</p>
 
 <hr>
+
+<h2>Inhalt</h2>
+
+<ul class="task-list">
+<li><a href="#user-content-eip">Einführung in die Programmierung</a></li>
+</ul>
+
+<hr>
+
+<h2>Einführung in die Programmierung <a name="user-content-eip"></a>
+</h2>
+
+<h3>Von Bäumen und Dreiecken - Blatt 6, Aufgabe 1.2</h3>
+
+<p>Diese Aufgabe ist an sich nicht besonders schwer, aber die Vielfältigkeit der möglichen Ansätze hat uns begeistert. Hier sind 2 Beispiele von <strong>Bennett</strong> und <strong>Lukas</strong>.<br>
+Lukas:</p>
+
+<div class="highlight highlight-C"><pre><span class="cm">/* 2nd function */</span>
+<span class="kt">void</span> <span class="nf">tree</span>(<span class="kt">int</span> height)
+{
+  <span class="kt">int</span> i,j,k;
+
+  <span class="c1">//proportions</span>
+  <span class="kt">int</span> stem_height=height/<span class="m">4</span>;     
+  <span class="kt">int</span> boughs_height=height-stem_height;
+  <span class="kt">int</span> boughs_width=(boughs_height-<span class="m">1</span>)*<span class="m">2</span>+<span class="m">1</span>;
+  <span class="kt">int</span> stem_width=(boughs_width/<span class="m">3</span>/<span class="m">2</span>)*<span class="m">2</span>+<span class="m">1</span>;
+
+  <span class="c1">//boughs</span>
+  <span class="k">for</span> (i=<span class="m">1</span>;i&lt;=boughs_height;i++)
+  {
+    <span class="k">for</span> (j=<span class="m">1</span>;j&lt;=boughs_width/<span class="m">2</span>-(i-<span class="m">1</span>);j++)
+    {
+      <span class="nf">printf</span>(<span class="s2">" "</span>);
+    }
+    <span class="k">for</span> (k=<span class="m">1</span>;k&lt;=i*<span class="m">2</span>-<span class="m">1</span>;k++)
+    {
+      <span class="nf">printf</span>(<span class="s2">"*"</span>);
+    }
+    <span class="nf">printf</span>(<span class="s2">"<span class="sc">\n</span>"</span>);
+  }
+
+  <span class="c1">//stem</span>
+  <span class="k">for</span> (i=<span class="m">1</span>;i&lt;=stem_height;i++)
+  {
+    <span class="k">for</span> (j=<span class="m">1</span>;j&lt;=boughs_width/<span class="m">2</span>-stem_width/<span class="m">2</span>;j++)
+    {
+      <span class="nf">printf</span>(<span class="s2">" "</span>);
+    }
+    <span class="k">for</span> (k=<span class="m">1</span>;k&lt;=stem_width;k++)
+    {
+      <span class="nf">printf</span>(<span class="s2">"*"</span>);
+    }
+    <span class="nf">printf</span>(<span class="s2">"<span class="sc">\n</span>"</span>);
+  }
+}
+
+
+<span class="cm">/* main function */</span>
+<span class="kt">int</span> <span class="nf">main</span>(<span class="kt">void</span>)
+{
+  <span class="kt">int</span> height;
+  <span class="k">do</span>
+  {
+    <span class="nf">printf</span>(<span class="s2">"Insert the height of the tree (min. 4):"</span>);
+    <span class="nf">scanf</span>(<span class="s2">"<span class="no">%d</span>"</span>,&amp;height);
+  }
+  <span class="k">while</span> (height&lt;<span class="m">4</span>&amp;&amp;<span class="nf">printf</span>(<span class="s2">"Invalite argument,try again<span class="sc">\n</span>"</span>));
+
+  <span class="nf">triangle</span>();
+  <span class="nf">tree</span>(height);
+
+  <span class="k">return</span> EXIT_SUCCESS;
+}
+
+
+<span class="c1">//KrLu</span></pre></div>
+
+<p>und Bennett:</p>
+
+<div class="highlight highlight-C"><pre><span class="kt">void</span> <span class="nf">xmas_tree</span>(<span class="kt">int</span> height)
+{<span class="kt">int</span> i;
+    <span class="c1">// Die Größenverhältnisse des Baums berechnen</span>
+    <span class="kt">int</span> branch_length = height * <span class="m">6</span> / <span class="m">8</span>;
+    <span class="kt">int</span> trunk_lenght = height * <span class="m">2</span> / <span class="m">8</span>;
+    <span class="kt">int</span> trunk_width = trunk_lenght * <span class="m">3</span> / <span class="m">2</span>;
+    <span class="c1">// printf("%d %d %d\n", branch_length, trunk_lenght, trunk_width);</span>
+
+    <span class="c1">// Geäst</span>
+
+    <span class="k">for</span> (i = <span class="m">0</span>; i &lt; branch_length; ++i)
+    {
+        <span class="cm">/* Die Linke Hälfte des Geästs ausgeben</span>
+<span class="cm">        * Der erste Modifier gibt die Mindestbreite vor,</span>
+<span class="cm">        * die mit whitespace gefüllt wird */</span>
+        <span class="nf">printf</span>(<span class="s2">"<span class="no">%*.*s</span>"</span>, height, i, <span class="s2">"*****************************************************************"</span>);
+        <span class="cm">/* Sobald nötig die rechte Hälfte ausgeben</span>
+<span class="cm">        * Durch das '-' wird das whitespace rechts angehängt */</span>
+        <span class="k">if</span>(i &gt; <span class="m">1</span>)
+            <span class="nf">printf</span>(<span class="s2">"<span class="no">%-*.*s</span><span class="sc">\n</span>"</span>, height, i-<span class="m">1</span>, <span class="s2">"*****************************************************************"</span>);
+        <span class="k">else</span>
+            <span class="nf">printf</span>(<span class="s2">"<span class="sc">\n</span>"</span>); <span class="c1">// Für die erste Zeile</span>
+    }
+
+    <span class="c1">// Stamm</span>
+
+    <span class="c1">// Dafür sorgen, dass der Stamm immer in der Mitte ist</span>
+    <span class="kt">int</span> height1 = height;
+    <span class="k">if</span>(!(trunk_width % <span class="m">2</span>))
+        height1--; <span class="c1">// Dann wird nämlich links weniger gepadded</span>
+
+    <span class="k">for</span> (i = <span class="m">0</span>; i &lt; trunk_lenght; ++i)
+    {
+        <span class="c1">// Wieder 2 Teile verwenden, um das Bild zu zentrierens</span>
+        <span class="nf">printf</span>(<span class="s2">"<span class="no">%*.*s</span>"</span>, height1, (trunk_width+<span class="m">1</span>)/<span class="m">2</span>, <span class="s2">"*********************************"</span>);
+        <span class="nf">printf</span>(<span class="s2">"<span class="no">%-*.*s</span><span class="sc">\n</span>"</span>, height, trunk_width/<span class="m">2</span>, <span class="s2">"*******************************"</span> );
+    }
+}
+
+<span class="kt">int</span> <span class="nf">main</span>()
+{
+    <span class="kt">int</span> triangle_height;
+    <span class="nf">printf</span>(<span class="s2">"Wie hoch soll das Dreieck werden: "</span>);
+    <span class="nf">scanf</span>(<span class="s2">"<span class="no">%d</span>"</span>, &amp;triangle_height);
+    <span class="nf">triangle</span>(triangle_height);
+
+    <span class="kt">int</span> xmas_tree_height;
+    <span class="nf">printf</span>(<span class="s2">"Wie hoch soll der Baum werden: "</span>);
+    <span class="nf">scanf</span>(<span class="s2">"<span class="no">%d</span>"</span>, &amp;xmas_tree_height);
+    <span class="nf">xmas_tree</span>(xmas_tree_height);
+
+    <span class="k">return</span> EXIT_SUCCESS;
+}</pre></div>
+
+<p>Lukas hat diese Aufgabe sehr flexibel gelöst, indem seine Schleifen jedes Zeichen inklusive der Leerzeichen einzeln zeichnen. Dadurch kann sein Baum so hoch werden, wie ein <code>int</code> zulässt.</p>
+
+<p>Bennett hat immer eine halbe Zeile auf einmal gezeichnet, indem er die linke Hälfte nach rechts, die Rechte nach links anordnet. Dafür musste ein String gemacht werden, aus dem die gewünschte Anzahl Zeichen ausgegeben wird, die Grenze ist hier also die Länge eines Strings.</p>
+
+<p>Welche von beiden Lösungen eleganter oder effizienter ist, wissen wir nicht. Lukas verbraucht weniger Speicher, hat aber mehr Schleifen. Bennett's Grenze wird möglicherweise früher erreicht.</p>
+
+<p>Wenn jemand beurteilen kann, welche Lösung besser ist, soll er sich bitte melden! <img class="emoji" title=":blush:" alt=":blush:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f60a.png" height="20" width="20" align="absmiddle"></p>
                     </div>
                   </div>
                 </div>
