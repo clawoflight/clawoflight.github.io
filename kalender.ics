@@ -4,9 +4,9 @@ PRODID:-//Bennett_Piater/Handcoded//EN
 ORGANIZER;CN=Bennett Piater:MAILTO:bennett@piater.name
 BEGIN:VEVENT
 UID:20141125-test-technische@clawoflight.github.io
-DTSTAMP:20141118T173200A
-DTSTART:20141125T141500A
-DTEND:20141125T150000A
+DTSTAMP:20141119T210900
+DTSTART:20141125T141500
+DTEND:20141125T150000
 SUMMARY:Test: Technische Informatik
 LOCATION:Hörsaal A (Technik)
 DESCRIPTION:Der Stoff der ersten 6 Blätter, also bis Arithmetik. UNBEDINGT Studentenausweis mitbringen!
