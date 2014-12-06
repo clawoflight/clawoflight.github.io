@@ -63,37 +63,55 @@ Was, sowas ist nicht witzig? Wieso nicht?</p>
 
 <h3>Segfault - Blatt 6, Aufgabe 2.3</h3>
 
-<p>Wir können schon etwas feiern: <strong>Bennett</strong>, <strong>Lukas</strong> und <strong>Jonas</strong> haben ihre ersten Segfaults ausgelöst! Herzlichen Glückwunsch! <img class="emoji" title=":wink:" alt=":wink:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f609.png" height="20" width="20" align="absmiddle"> Natürlich liegt das erstmal nur an stack overflows, größere Fehler zu machen müssen wir erst noch lernen. <img class="emoji" title=":grin:" alt=":grin:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f601.png" height="20" width="20" align="absmiddle"> Hier ist eins der guten Stücke:</p>
+<p>Wir können schon etwas feiern: <strong>Bennett</strong>, <strong>Jonas</strong> und <strong>Lukas</strong> haben ihre ersten Segfaults ausgelöst! Herzlichen Glückwunsch! <img class="emoji" title=":wink:" alt=":wink:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f609.png" height="20" width="20" align="absmiddle"> Natürlich liegt das erstmal nur an stack overflows, größere Fehler zu machen müssen wir erst noch lernen. <img class="emoji" title=":grin:" alt=":grin:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f601.png" height="20" width="20" align="absmiddle"> Hier ist eins der guten Stücke:</p>
 
-<div class="highlight highlight-C"><pre><span class="c1">// Ein Ausschnitt aus a2.c</span>
-<span class="kt">void</span> <span class="nf">prime_recursive</span>(<span class="kt">int</span> range, <span class="kt">int</span> i, <span class="kt">int</span> z)
+<div class="highlight highlight-c"><pre><span class="pl-c">// Ein Ausschnitt aus a2.c</span>
+<span class="pl-st">void</span> <span class="pl-en">prime_recursive</span>(<span class="pl-st">int</span> range, <span class="pl-st">int</span> i, <span class="pl-st">int</span> z)
 {
-    <span class="k">if</span> (range &gt; <span class="m">0</span>)
+    <span class="pl-k">if</span> (range &gt; <span class="pl-c1">0</span>)
     {
-        <span class="k">if</span> (range % i == <span class="m">0</span>)
+        <span class="pl-k">if</span> (range % i == <span class="pl-c1">0</span>)
         {
-            <span class="k">return</span> <span class="nf">prime_recursive</span>(range, i++, z++);
+            <span class="pl-k">return</span> <span class="pl-s3">prime_recursive</span>(range, i++, z++);
         }
-        <span class="k">else</span> 
+        <span class="pl-k">else</span> 
         {
-            <span class="k">return</span> <span class="nf">prime_recursive</span>(range--, i++, z);
+            <span class="pl-k">return</span> <span class="pl-s3">prime_recursive</span>(range--, i++, z);
         }
     }
-    <span class="k">else</span> <span class="k">if</span> ( z == <span class="m">2</span>)
+    <span class="pl-k">else</span> <span class="pl-k">if</span> ( z == <span class="pl-c1">2</span>)
     {
-        <span class="nf">printf</span>(<span class="s2">"Primzahl = <span class="no">%d</span><span class="sc">\n</span>"</span>, range);
-        <span class="k">return</span> <span class="nf">prime_recursive</span>(range--, <span class="m">1</span>, <span class="m">0</span>);
+        <span class="pl-s3">printf</span>(<span class="pl-s1"><span class="pl-pds">"</span>Primzahl = <span class="pl-c1">%d</span><span class="pl-cce">\n</span><span class="pl-pds">"</span></span>, range);
+        <span class="pl-k">return</span> <span class="pl-s3">prime_recursive</span>(range--, <span class="pl-c1">1</span>, <span class="pl-c1">0</span>);
     }
-    <span class="k">else</span> <span class="k">if</span> (z != <span class="m">2</span>)
+    <span class="pl-k">else</span> <span class="pl-k">if</span> (z != <span class="pl-c1">2</span>)
     {
-        <span class="k">return</span> <span class="nf">prime_recursive</span>(range--, <span class="m">1</span>, <span class="m">0</span>);
+        <span class="pl-k">return</span> <span class="pl-s3">prime_recursive</span>(range--, <span class="pl-c1">1</span>, <span class="pl-c1">0</span>);
     }   
 }</pre></div>
 
 <p>Kleiner Tipp: Wenn man alle Indices auf einmal verändert, können Schritte übersprungen werden...</p>
 
-<p>Aber ehrlich, in Zukunft sollten wir darauf schon aufpassen... Compiler haben auch gefühle! <a href="https://camo.githubusercontent.com/7e685b4307b6c287e4936201b7a97af5538574ef/687474703a2f2f696d67732e786b63642e636f6d2f636f6d6963732f636f6d70696c65725f636f6d706c61696e742e706e67" target="_blank"><img src="https://camo.githubusercontent.com/7e685b4307b6c287e4936201b7a97af5538574ef/687474703a2f2f696d67732e786b63642e636f6d2f636f6d6963732f636f6d70696c65725f636f6d706c61696e742e706e67" alt="Segfault" data-canonical-src="http://imgs.xkcd.com/comics/compiler_complaint.png" style="max-width:100%;"></a><br>
+<p>Aber ehrlich, in Zukunft sollten wir darauf schon aufpassen... Compiler haben auch Gefühle! <a href="https://camo.githubusercontent.com/7e685b4307b6c287e4936201b7a97af5538574ef/687474703a2f2f696d67732e786b63642e636f6d2f636f6d6963732f636f6d70696c65725f636f6d706c61696e742e706e67" target="_blank"><img src="https://camo.githubusercontent.com/7e685b4307b6c287e4936201b7a97af5538574ef/687474703a2f2f696d67732e786b63642e636f6d2f636f6d6963732f636f6d70696c65725f636f6d706c61696e742e706e67" alt="Segfault" data-canonical-src="http://imgs.xkcd.com/comics/compiler_complaint.png" style="max-width:100%;"></a><br>
 Keine Sorge, in C passiert sowas häufiger... Deshalb gibt es auch Witze und Comics dazu. Spaß muss schließlich auch sein! <img class="emoji" title=":stuck_out_tongue_winking_eye:" alt=":stuck_out_tongue_winking_eye:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f61c.png" height="20" width="20" align="absmiddle"></p>
+
+<h3>Doppelt vertauschen hält nicht besser - Blatt 10, Aufgabe 3</h3>
+
+<p><strong>Bennett</strong> Hat eine äußerst effektive Vertauschungsfunktion geschrieben. So effektiv, dass sie alles doppelt vertauscht, sodass am Ende alles wie vorher ist! <img class="emoji" title=":smile:" alt=":smile:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png" height="20" width="20" align="absmiddle"></p>
+
+<div class="highlight highlight-c"><pre><span class="pl-st">void</span> <span class="pl-en">array_reverse</span>(<span class="pl-st">void</span> *array, <span class="pl-st">int</span> length, <span class="pl-s3">size_t</span> el_size)
+{
+    <span class="pl-st">void</span> *tmp = <span class="pl-s3">malloc</span>(el_size);
+    <span class="pl-k">for</span> (<span class="pl-st">int</span> i = <span class="pl-c1">0</span>; i &lt; length; ++i) <span class="pl-c">// Wenn ich durch die ganze Länge iteriere, vertausche ich am Ende natürlich alle Elemente doppelt...</span>
+    {
+        <span class="pl-s3">memcpy</span>(tmp, array+i, el_size);
+        <span class="pl-s3">memcpy</span>(array+i, array+length-<span class="pl-c1">1</span>-i, el_size);
+        <span class="pl-s3">memcpy</span>(array+length-<span class="pl-c1">1</span>-i, tmp, el_size);
+    }
+    <span class="pl-s3">free</span>(tmp);
+}</pre></div>
+
+<p>Daraus können wir lernen: Wenn man mit diesem einfachen Algorithus vertauscht, sollte man nur über die halbe Länge iterieren!</p>
                     </div>
                   </div>
                 </div>
