@@ -1,6 +1,6 @@
 ---
 title: Hello World!
-layout: page
+layout: post
 category: test
 ---
 # Welcome!
