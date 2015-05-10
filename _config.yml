@@ -51,7 +51,7 @@ kramdown:
     coderay_css: class
 
 sass:
-    style: :compressed
+  style: :compressed
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink:   none
