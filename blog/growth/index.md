@@ -1,8 +1,8 @@
 ---
 layout: category-list
-title: "Category: Programming"
+title: "Category: Spiritual Growth"
 tags: [Jekyll, theme, responsive, blog, template]
-category: programming
+category: growth
 image:
   feature: typewriter.jpg
 ---
