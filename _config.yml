@@ -1,40 +1,37 @@
-title:            Balzac
-tagline:          A beautiful theme.
-description:      Describe your website.
-canonical: http://jekyll.gtat.me
+title:            Bennett Piater
+tagline:          Welcome to my Page!
+description:      You will find my Blog and other stuff.
+canonical: http://bennett.piater.name
 
 # Owner/author information
 owner:
-  name:           Cole Townsend
+  name:           Bennett Piater
   avatar:         avatar.png
-  bio:            "Aesthete & Athlete"
-  email:          cole@coletownsend.com
-  twitter:        twnsndco
-  github:         coletownsend
-  instagram:      ctrunsthis
-  dribbble:       coletownsend
-  disqus:         balzac
-  location:       "Buffalo, NY"
+  bio:
+  email:          bennett@piater.name
+  twitter:        clawoflight
+  github:         clawoflight
+  instagram:
+  dribbble:
+  disqus:
+  location:       "Innsbruck, Austria"
   # Plug in your disqus shortname!
 
 tools:
-  standards:      "HTML, SCSS, Jekyll"
-  software:       "git"
+  standards:
+  software:
 
 # Links to include in top navigation
 # For external links add external: true
 links:
   - title: About
     url: /about
-  - title: Github
-    url: https://github.com/ColeTownsend/Balzac-for-Jekyll
-    external: true
-  - title: Cole Who?
-    url: http://coletownsend.com
-    external: true
+  #- title: Cole Who?
+  #  url: http://coletownsend.com
+  #  external: true
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/New_York
+timezone:    Europe/Vienna
 future:      true
 highlighter: pygments
 markdown:    kramdown
