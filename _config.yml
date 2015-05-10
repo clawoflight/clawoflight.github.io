@@ -7,13 +7,13 @@ canonical: http://bennett.piater.name
 owner:
   name:           Bennett Piater
   avatar:         avatar.png
-  bio:            ""
+  bio:
   email:          bennett@piater.name
   twitter:        clawoflight
   github:         clawoflight
-  instagram:      ""
-  dribbble:       ""
-  disqus:         ""
+  instagram:
+  dribbble:
+  disqus:
   location:       "Innsbruck, Austria"
   # Plug in your disqus shortname!
 
