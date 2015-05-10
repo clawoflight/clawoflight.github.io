@@ -26,6 +26,8 @@ tools:
 links:
   - title: About
     url: /about
+  - title: Blog
+    url: /blog
   #- title: Cole Who?
   #  url: http://coletownsend.com
   #  external: true

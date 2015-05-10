@@ -2,6 +2,6 @@
 title: Hello World!
 layout: post
 ---
-# Welcome
+# Welcome!
 
 This is a test post.
