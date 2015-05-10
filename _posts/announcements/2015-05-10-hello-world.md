@@ -2,6 +2,7 @@
 title: Hello World!
 description: This is my new blog!
 layout: post
+category: announcements
 tags: first
 ---
 # Welcome to my new blog!
