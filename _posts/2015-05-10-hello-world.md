@@ -1,6 +1,6 @@
 ---
 title: Hello World!
-layout: post-no-feature
+layout: post
 ---
 # Welcome!
 
