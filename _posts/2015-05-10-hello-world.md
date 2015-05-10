@@ -1,6 +1,6 @@
 ---
 title: Hello World!
-layout: caiman
+layout: post
 ---
 # Welcome
 
