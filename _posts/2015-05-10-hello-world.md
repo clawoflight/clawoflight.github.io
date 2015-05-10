@@ -1,7 +1,7 @@
 ---
 title: Hello World!
 layout: post
-categories: programming
+categories: "programming"
 ---
 # Welcome!
 
