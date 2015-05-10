@@ -1,13 +1,13 @@
 title:            Bennett Piater
 tagline:          Welcome to my Page!
 description:      You will find my Blog and other stuff.
-canonical: http://bennett.piater.name
+canonical:        http://clawoflight.github.io
 
 # Owner/author information
 owner:
   name:           Bennett Piater
   avatar:         avatar.png
-  bio:
+  bio:            "My life belongs to the LORD."
   email:          bennett@piater.name
   twitter:        clawoflight
   github:         clawoflight
