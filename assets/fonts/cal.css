@@ -19,7 +19,7 @@
 
 
 @font-face {
-    font-family: 'calendas_plusbold';
+    font-family: 'Calendas Plus Bold';
     src: url('calendas_plus_bold-webfont.eot');
     src: url('calendas_plus_bold-webfont.eot?#iefix') format('embedded-opentype'),
          url('calendas_plus_bold-webfont.woff2') format('woff2'),
@@ -35,7 +35,7 @@
 
 
 @font-face {
-    font-family: 'calendas_plusitalic';
+    font-family: 'Calendas Plus Italic';
     src: url('calendas_plus_italic-webfont.eot');
     src: url('calendas_plus_italic-webfont.eot?#iefix') format('embedded-opentype'),
          url('calendas_plus_italic-webfont.woff2') format('woff2'),
