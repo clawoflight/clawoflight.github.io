@@ -24,7 +24,7 @@ For one, this passage could be used to in conjunction with others to assert that
 However, we know for sure that none of these verses permit that conclusion, or the verses *Remember the word that I said to you: ‘A servant is not greater than his master.If they persecuted me, they will also persecute you* (John 15:20) and *Indeed, all who desire to live a godly life in Christ Jesus will be persecuted* (2 Timothy 3:12) would not hold.
 God **does** preserve his children, but he doesn't completely prevent harm.
 
-What, then, could I possibly infer from this passage? Well, the words `viper` and `serpent` are `never used in the Bible without carrying symbolic meaning` (or I do not know of, nor did I find any such passage in preparation for this essay). The serpent, the viper always seems to be used as the impersonation of Satan or at least as a more general symbolization of evil. So it is in the stories of the Old Testament, in the words of the Prophets, and in Jesus' language, as well as in the pictures of Revelation.
+What, then, could I possibly infer from this passage? Well, the words `viper` and `serpent` are **never used in the Bible without carrying symbolic meaning** (or I do not know of, nor did I find any such passage in preparation for this essay). The serpent, the viper always seems to be used as the impersonation of Satan or at least as a more general symbolization of evil. So it is in the stories of the Old Testament, in the words of the Prophets, and in Jesus' language, as well as in the pictures of Revelation.
 
 This is why I think that Paul's encounter carries symbolic meaning as well. And it is thus (and sounds like a sentence from Narnia) :
 
