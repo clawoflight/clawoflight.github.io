@@ -53,7 +53,7 @@
 <a href="#2015-05-22">2015-05-22</a>
 
 <ul>
-<li><a href="#inheritance">Inheritance</a></li>
+<li><a href="#multiple-processes-inheritance">Multiple processes: Inheritance</a></li>
 <li>
 <a href="#ipc-1">IPC (1)</a>
 
@@ -94,6 +94,21 @@
 </li>
 </ul>
 </li>
+<li>
+<a href="#2015-05-13">2015-05-13</a>
+
+<ul>
+<li><a href="#threads">Threads</a></li>
+<li>
+<a href="#ipc-4">IPC (4)</a>
+
+<ul>
+<li><a href="#mutexes">Mutexes</a></li>
+<li><a href="#condition-variables">Condition variables</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
 
@@ -102,7 +117,7 @@
 <a id="user-content-2015-05-22" class="anchor" href="#2015-05-22" aria-hidden="true"><span class="octicon octicon-link"></span></a>2015-05-22</h1>
 
 <h2>
-<a id="user-content-inheritance" class="anchor" href="#inheritance" aria-hidden="true"><span class="octicon octicon-link"></span></a>Inheritance</h2>
+<a id="user-content-multiple-processes-inheritance" class="anchor" href="#multiple-processes-inheritance" aria-hidden="true"><span class="octicon octicon-link"></span></a>Multiple processes: Inheritance</h2>
 
 <ul>
 <li>Signals
@@ -401,7 +416,102 @@ shared_memory = (SHARED_MEMORY_DATATYPE *) ptr; <span class="pl-c">// Use the vo
 
 <span class="pl-c">// ...</span>
 
-<span class="pl-en">sem_unlink</span>(<span class="pl-s"><span class="pl-pds">"</span>/semasync_semaphore<span class="pl-pds">"</span></span>); <span class="pl-c">// Unlink semaphore, it will be destroyed wenn all processes that use it finish</span></pre></div>
+<span class="pl-en">sem_unlink</span>(<span class="pl-s"><span class="pl-pds">"</span>/semasync_semaphore<span class="pl-pds">"</span></span>); <span class="pl-c">// Unlink semaphore, it will be destroyed when all processes that use it finish</span></pre></div>
+
+<h1>
+<a id="user-content-2015-05-13" class="anchor" href="#2015-05-13" aria-hidden="true"><span class="octicon octicon-link"></span></a>2015-05-13</h1>
+
+<h2>
+<a id="user-content-threads" class="anchor" href="#threads" aria-hidden="true"><span class="octicon octicon-link"></span></a>Threads</h2>
+
+<p>Forking is useful, but the memory has to be duplicated on every call, which is an <strong>expensive</strong> operation.
+Threads are a similar concept to processes with some key differences:</p>
+
+<ul>
+<li>They belong to the same process</li>
+<li>They are scheduled like separate processes.</li>
+<li>They share memory (no memory duplication on creation)
+
+<ul>
+<li>Global variables and heap memory is shared between threads!</li>
+<li>Stack variables obviously not.</li>
+</ul>
+</li>
+<li>They have their own stack frames</li>
+</ul>
+
+<p>This means that threads are basically <em>sets of program counters and stack frames</em> for a same process, all running in parallel.</p>
+
+<h2>
+<a id="user-content-ipc-4" class="anchor" href="#ipc-4" aria-hidden="true"><span class="octicon octicon-link"></span></a>IPC (4)</h2>
+
+<h3>
+<a id="user-content-mutexes" class="anchor" href="#mutexes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Mutexes</h3>
+
+<p>Mutexes are like semaphores, but they only have 2 states: 1 and 0. For our purposes, they function as a <strong>lock</strong> to protect critical regions, but they are more advanced than semaphores because condition variables can be used with them.</p>
+
+<p>They have two basic operations:</p>
+
+<ul>
+<li>lock
+
+<ul>
+<li>equivalent to semaphore.wait()</li>
+</ul>
+</li>
+<li>unlock
+
+<ul>
+<li>equivalent to semaphore.post()</li>
+</ul>
+</li>
+</ul>
+
+<h3>
+<a id="user-content-condition-variables" class="anchor" href="#condition-variables" aria-hidden="true"><span class="octicon octicon-link"></span></a>Condition variables</h3>
+
+<p>Condition variables are always associated to a mutex.</p>
+
+<p>They have two operations that <strong>must be used within the critical region</strong> of the associated mutex:</p>
+
+<ul>
+<li>wait
+
+<ul>
+<li>Unlock the mutex</li>
+<li>This thread blocks and <em>leaves the critical section</em> until it is woken. This means that other threads <em>will be allowed to enter</em> it while this one sleeps!</li>
+</ul>
+</li>
+<li>signal
+
+<ul>
+<li>Unlock <strong>all</strong> other threads blocked within this critical region</li>
+<li>The woken processes will try to lock their critical region</li>
+</ul>
+</li>
+</ul>
+
+<div class="highlight highlight-C"><pre><span class="pl-c">/* This is an abstraction, not valid code! POSIX is less clean (obviously) */</span>
+
+<span class="pl-k">void</span> <span class="pl-en">read</span>() {
+    <span class="pl-c1">lock</span>(mutex); <span class="pl-c">// Enter critical region</span>
+
+    <span class="pl-k">while</span>(id == <span class="pl-c1">0</span>) <span class="pl-c">// It is *very important* to use a while here instead of an if, as the condition might become invalid again for some processes!</span>
+        <span class="pl-c1">wait</span>(condition_variable); <span class="pl-c">// This is much less time-consuming than sleep(1), and we leave the critical region temporarily</span>
+    <span class="pl-c1">printf</span>(<span class="pl-s"><span class="pl-pds">"</span><span class="pl-c1">%d</span><span class="pl-cce">\n</span><span class="pl-pds">"</span></span>, id);
+
+    <span class="pl-c1">unlock</span>(mutex); <span class="pl-c">// Leave critical region</span>
+}
+
+<span class="pl-k">void</span> <span class="pl-en">write</span>() {
+    <span class="pl-c1">lock</span>(mutex); <span class="pl-c">// Enter critical region</span>
+
+    id = <span class="pl-c1">5</span>;
+    <span class="pl-c1">signal</span>(condition_variable); <span class="pl-c">// Tell waiting readers that the id became valid</span>
+
+    <span class="pl-c1">unlock</span>(mutex); <span class="pl-c">// Leave critical region</span>
+}
+</pre></div>
 
               </div>
             </div>
