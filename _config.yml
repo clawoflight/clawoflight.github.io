@@ -24,7 +24,9 @@ tools:
 # Links to include in top navigation
 # For external links add external: true
 links:
-  - title: About Me
+  - title: Me
+    url: /me
+  - title: About
     url: /about
   - title: Blog
     url: /blog
@@ -60,3 +62,12 @@ permalink: pretty
 
 include: [".htaccess"]
 exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp"]
+
+defaults:
+-
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      category: "scripture"
