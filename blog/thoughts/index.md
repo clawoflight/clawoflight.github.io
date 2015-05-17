@@ -1,8 +1,8 @@
 ---
 layout: category-list
-title: "Category: Spiritual Growth"
+title: "Category: (random) Thoughts"
 tags: [Jekyll, theme, responsive, blog, template]
-category: growth
+category: thoughts
 image:
   feature: typewriter.jpg
 ---
