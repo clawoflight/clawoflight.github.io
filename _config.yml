@@ -7,7 +7,7 @@ canonical:        http://bennett.piater.name
 owner:
   name:           Bennett Piater
   avatar:         avatar.png
-  bio:            "My life belongs to the LORD."
+  bio:            "My life belongs to the LORD. Soli Deo Gloria!"
   email:          bennett@piater.name
   twitter:        clawoflight
   github:         clawoflight
@@ -36,7 +36,7 @@ links:
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    Europe/Vienna
-future:      true
+future:      false
 highlighter: pygments
 markdown:    kramdown
 
