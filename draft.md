@@ -25,7 +25,7 @@ On the appointed time, (i.e., when **God wanted to**), he redeemed us, literally
 ### Access to The Father
 The first, vital gift of the Spirit is access to the Father. Though we technically gain this right and privilege through the new and perfect high priest, Jesus, it is the Spirit that **grants us the peace and bold faith** required to draw near to God: *And without faith it is impossible to please him, for whoever would draw near to God must believe that he exists and that he rewards those who seek him.* (Hebrews 11:6 - c.f. Ephesians 2:18)
 
-Through this gift, we are given the freedom to approach the LORD, seek refuge and solace, and boldly ask that we may receive. What a privilege it is to be free to have a father-son relationship with our creator!
+Through this gift, we are given the freedom to **approach** the LORD, seek refuge and solace, and boldly ask that we may receive. What a privilege it is to be free to have a father-son relationship with our creator!
 
 ### Freedom From Slavery
 The second gift is equally magnificent. Before God saved us, we were completely lost in bondage to sin -- we were slaves of our flesh, as Paul states right here, among many others: *Formerly, when you did not know God, you were enslaved to those that by nature are not gods.* (v. 8) We were incapable of doing the slightest even remotely good thing, let alone serving God.
@@ -34,7 +34,7 @@ The second gift is equally magnificent. Before God saved us, we were completely 
 >Those who are in the flesh cannot please God.
 >(Romans 8:7f)
 
-Instead, we were utterly devoted to the Devil and spent all of our time serving and glorifying him, trying to satisfy our bottomless desires and being consumed by sensuality, thirst of trifles like power, money and fame, or spending our time with equally futile pleasures. Nowhere in us was any power to change that.
+Instead, we were **utterly devoted to the Devil** and spent all of our time serving and glorifying him, trying to satisfy our bottomless desires and being consumed by sensuality, thirst of trifles like power, money and fame, or spending our time with equally futile pleasures. Nowhere in us was any power to change that.
 
 Fortunately, God sent his powerful, transforming Spirit into our heart. We are a new creation, everything changed! (2 Corinthians 5:17) We are no longer bound to sin: *We know that our old self was crucified with him in order that the body of sin might be brought to nothing, so that we would no longer be enslaved to sin. But now that you have been set free from sin and have become slaves of God, the fruit you get leads to sanctification and its end, eternal life.* (Romans 6:6.22) The spirit empowers us and allows us to **serve the LORD through his power**. I will simply let Romans 8 speak for me:
 
@@ -43,7 +43,7 @@ For the law of the Spirit of life has set you free in Christ Jesus from the law 
 For God has done what the law, weakened by the flesh, could not do. By sending his own Son in the likeness of sinful flesh and for sin, he condemned sin in the flesh,
 in order that the righteous requirement of the law might be fulfilled in us, who walk not according to the flesh but according to the Spirit.
 For those who live according to the flesh set their minds on the things of the flesh, but those who live according to the Spirit set their minds on the things of the Spirit.
-For to set the mind on the flesh is death, but to set the mind on the Spirit is life and peace.
+**For to set the mind on the flesh is death, but to set the mind on the Spirit is life and peace.**
 For the mind that is set on the flesh is hostile to God, for it does not submit to God's law; indeed, it cannot.
 Those who are in the flesh cannot please God.
 You, however, are not in the flesh but in the Spirit, if in fact the Spirit of God dwells in you. Anyone who does not have the Spirit of Christ does not belong to him.
