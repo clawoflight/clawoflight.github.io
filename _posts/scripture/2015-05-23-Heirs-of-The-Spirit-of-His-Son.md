@@ -14,7 +14,7 @@ And because you are sons, God has sent the Spirit of his Son into our hearts, cr
 
 Because of the spirit, we are no longer bound by human nature, but free and able to see God's glory, his claim to rule over us and to accept him as our father.
 
-On the appointed time, (i.e., when **God wanted to**), he redeemed us, literally bought us from what enslaved us in this world. We could not do anything about our situation, but **He could!** (I might write a post on why God's sovereignty is a useful doctrine, but that is not the point of this one) He purchased us for his glory, freeing us from our previous slavery. And in doing so, he gave us 3 huge gifts through his Spirit:
+On the appointed time, (i.e., when **God wanted to**), he redeemed us, literally bought us from what enslaved us in this world. We could not do anything about our situation, but **He could!** (I might write a post on why God's sovereignty is a useful doctrine, but that is not the point of this one) He purchased us for his glory, freeing us from our previous slavery. Now that we are his children, we have **inherited his Spirit**. And we have received 3 huge gifts through him:
 
 1. We are cleansed, purified by him, which allows us to draw near to God and be used by him.
 2. We are freed from the slavery of our flesh and continuously sanctified, which enables us to do good and server him instead of the Devil.
