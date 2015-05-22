@@ -4,6 +4,7 @@ tags: ['Galatians 4:3-7', 'Galatians 4', 'Spirit', 'gift', 'inheritance', 'child
 date: 2015-05-22
 description: What is the meaning of Galatians 4:6, where God is said to have sent the Spirit of his Son into our hearts? What is this great gift of his, and why should we care that we are sons of God?
 permalink: /draft/index.html
+layout: post
 ---
 ```
 In the same way we also, when we were children, were enslaved to the elementary principles of the world.
