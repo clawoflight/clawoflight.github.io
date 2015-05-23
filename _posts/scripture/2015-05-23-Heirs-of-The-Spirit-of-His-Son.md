@@ -19,7 +19,7 @@ Because of the spirit, we are no longer bound by human nature, but free and able
 On the appointed time, (i.e., when **God wanted to**), he redeemed us, literally bought us from what enslaved us in this world. We could not do anything about our situation, but **He could!** (I might write a post on why God's sovereignty is a useful doctrine, but that is not the point of this one) He purchased us for his glory, freeing us from our previous slavery. Now that we are his children, we have **inherited his Spirit**. And we have received 3 huge gifts through him:
 
 1. We are cleansed, purified by him, which allows us to draw near to God and be used by him.
-2. We are freed from the slavery of our flesh and continuously sanctified, which enables us to do good and server him instead of the Devil.
+2. We are freed from the slavery of our flesh and continuously sanctified, which enables us to do good and serve him instead of the Devil.
 3. It bears witness that we are children of God and will be glorified with the Son.
 
 ## Access to The Father
@@ -75,7 +75,7 @@ We are now free to walk in the good works set before us, to enjoy the life our F
 ## Assurance of Glorification
 While the first 2 gifts are amazing, the third is disproportionally grander. Not only are we free to draw near to God and given the power of the Spirit, but now that we are sons, we become heirs as well: *So you are no longer a slave, but a son, and if a son, then an heir through God.* (v. 7)
 
-What is this **heritage** that we have gained access to? This is, in my opinion, the greatest promise hidden in the gift of the Spirit. Paul explained it in more detail, again, in the corresponding chapter of Romans: *The Spirit himself bears witness with our spirit that we are children of God, and if children, then heirs - heirs of God and fellow heirs with Christ, provided we suffer with him in order that we may also be glorified with him.* (Romans 8:16f) I'm not going to address the purpose of suffering in this post, though I might write about it at length in the future. I am more interested in verse 16 and the last part of verse 17:
+What is this **heritage** that we have gained access to? This is, in my opinion, the greatest promise hidden in the gift of the Spirit. Paul explained it in more detail, again, in the corresponding chapter of Romans: *The Spirit himself bears witness with our spirit that we are children of God, and if children, then heirs -- heirs of God and fellow heirs with Christ, provided we suffer with him in order that we may also be glorified with him.* (Romans 8:16f) I'm not going to address the purpose of suffering in this post, though I might write about it at length in the future. For now, I am more interested in verse 16 and the last part of verse 17:
 
 Firstly, the Spirit bears witness with our Spirit that we are sons of God (v. 16). Paul's use of the word `spirit` when belonging to a human treats it as a specific part of us, different from `flesh` and `soul`, similar to the modern use of `heart` or `feelings`. That is why I interpret this verse like this: The Spirit gives us **emotional confirmation** that we are sons of God and will inherit from him. As with everything else he does, I assume that he primarily achieves this through the words of scripture, just like the **cognitive assurance** that he also gives us.
 
