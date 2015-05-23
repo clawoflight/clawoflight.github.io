@@ -1,7 +1,7 @@
 ---
 layout: category-list
 title: "Category: Programming"
-tags: [Jekyll, theme, responsive, blog, template]
+tags: [blog, programming, coding, hacking, linux, unix, gnu, computer, hardware, software]
 category: programming
 image:
   feature: typewriter.jpg
