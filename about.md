@@ -28,5 +28,4 @@ This website uses javascript but should be pefectly usable without it. Specifica
 * `Modernizr.js` (for browser feature detection)
 * `Retina.js` (for retina image version support)
 * Twitter's `widgets.js`
-
-Comments might be added using `disqus` in the future.
+* `Disqus` for comments
