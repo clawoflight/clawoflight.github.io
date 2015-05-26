@@ -1,5 +1,5 @@
 ---
-title: About me
+title: About Me
 layout: post
 permalink: /me/index.html
 image:
