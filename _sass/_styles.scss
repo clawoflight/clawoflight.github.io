@@ -344,17 +344,16 @@ header.site-header nav {
     min-height: 500px;
 }
 
-.archive-wrap {
+// Custom css for the home page
+.archive-wrap-home {
     @include column(10);
-    max-width: 800px;
+    max-width: 680px;
     display: block;
     margin: 0 auto;
     float: none;
     padding-top: 140px;
 
-    // Custom css for the home page
     .post-preview-home {
-        max-width: 680px;
         padding-top: -100px;
         vertical-align: left;
         list-style-type: none;
@@ -447,6 +446,15 @@ header.site-header nav {
             vertical-align: middle;
         }
     }
+}
+
+.archive-wrap {
+    @include column(10);
+    max-width: 800px;
+    display: block;
+    margin: 0 auto;
+    float: none;
+    padding-top: 140px;
 
     // Post Listing
     .post-list {
