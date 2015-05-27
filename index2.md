@@ -19,7 +19,7 @@ My Blog is probably what you are looking for. You can click on the corresponding
 // Todo: add a preview of the latest post
 
 <div id='bump'>
-    <section class="article archive">
+    <section class="archive">
       <article class="archive-wrap">
           <ol class="post-preview-home">
              <lh><h2><span class="bb">{{ page.title }}</span></h2></lh>
