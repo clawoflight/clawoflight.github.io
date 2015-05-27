@@ -352,6 +352,66 @@ header.site-header nav {
     float: none;
     padding-top: 140px;
 
+    // Custom css for the home page
+    .post-preview-home {
+        list-style-type: none;
+        list-style: none;
+        @include column(7);
+        @include push(2);
+        display: block;
+        float: none;
+
+        lh h2 {
+            margin-bottom: $lh*1.5;
+        }
+
+        li {
+            display: block;
+            float: none;
+            font-size: $fs3;
+            margin-bottom: $lh*2;
+            position: relative;
+
+            a {
+                position: relative;
+                &:hover {
+                    @include transit;
+                }
+            }
+
+            a:hover:before {
+                content:'...';
+                color: $grey-light;
+                font-family: $sans;
+                position: absolute;
+                margin-left: -30px;
+                font-size: 15px;
+                left: 0;
+                top: -20px;
+                text-align: center;
+                @include transit;
+            }
+
+            a:before {
+                content:'\201c';
+                color: $grey-light;
+                position: absolute;
+                margin-left: -30px;
+                font-size: 25px;
+                z-index: 10;
+                top: -2px;
+                left: 0;
+                text-align: center;
+                @include transit;
+
+            }
+
+            h1 {
+                font-size: $fs3;
+                font-style: italic;
+            }
+        }
+
     // Post Listing
     .post-list {
         list-style-type: none;
