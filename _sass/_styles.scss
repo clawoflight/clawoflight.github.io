@@ -411,6 +411,39 @@ header.site-header nav {
                 font-style: italic;
             }
         }
+        .summary {
+            font-size: 18px;
+            line-height: 1.45em;
+        }
+
+        .date {
+            margin-bottom: 3px;
+        }
+
+        .date time {
+            position: relative;
+            top: -3px;
+            font-size: $fs5;
+            font-weight: bold;
+            font-family: $sans;
+            font-style: normal;
+            color: $grey-light;
+            text-transform: uppercase;
+            vertical-align: middle;
+        }
+
+        .date category {
+            position: relative;
+            top: -3px;
+            font-size: $fs5;
+            font-weight: bold;
+            font-family: $sans;
+            font-style: normal;
+            color: $link;
+            text-transform: uppercase;
+            vertical-align: middle;
+        }
+    }
 
     // Post Listing
     .post-list {
