@@ -354,6 +354,7 @@ header.site-header nav {
 
     // Custom css for the home page
     .post-preview-home {
+        vertical-align: left;
         list-style-type: none;
         list-style: none;
         @include column(7);
@@ -385,7 +386,7 @@ header.site-header nav {
                 font-family: $sans;
                 position: absolute;
                 margin-left: -30px;
-                font-size: 15px;
+                font-size: 25px;
                 left: 0;
                 top: -20px;
                 text-align: center;
@@ -397,9 +398,9 @@ header.site-header nav {
                 color: $grey-light;
                 position: absolute;
                 margin-left: -30px;
-                font-size: 25px;
+                font-size: 40px;
                 z-index: 10;
-                top: -2px;
+                top: -5px;
                 left: 0;
                 text-align: center;
                 @include transit;
