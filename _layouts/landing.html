@@ -1,0 +1,34 @@
+{% include head.html %}
+
+<section class="article">
+
+{% if page.image.feature %}
+  <div class="overlay"></div>
+  {% if page.image.feature contains 'https://' | escape or page.image.feature contains 'http://' | escape %}
+  <div class="featured-image" style="background-image: url({{ page.image.feature }})"></div>
+  {% else %}
+  <div class="featured-image" style="background-image: url({{ site.url }}/images/{{ page.image.feature }})"></div>
+  {% endif %}
+{% else %}
+  <div class="overlay"></div>
+  <div class="featured-image" style="background-image: url({{ site.url }}/images/hemingway-rewritten_wp_header.jpg)"></div>
+{% endif %}
+
+
+      <article class="wrap post">
+        <header class="post-header">
+          <hgroup>
+            <h1>{{page.title}}</h1>
+            <p class="date">{{page.date | date: "%b %d, %Y" }} {% if page.category %} -- in: <a href="{{ site.url }}/blog/{{ page.category }}"> {{ page.category }}</a> {% endif %}</p>
+            <p class="intro">{% if page.description %}{{ page.description }}{% else %}{{ page.tagline }}{% endif %}</p>
+          </hgroup>
+        </header>
+
+        {{ content }}
+
+      </article>
+
+    </section>
+</div>
+
+{% include footer.html %}

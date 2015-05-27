@@ -1,7 +1,7 @@
 ---
 title: Bennett Piater
 description: "My Blog, Random Thoughts and Notes, Personal Projects and Other Stuff."
-layout: post
+layout: landing
 image:
     feature: Innsbruck.jpg
 ---
