@@ -18,11 +18,11 @@ My Blog is probably what you are looking for. You can click on the corresponding
 
 // Todo: add a preview of the latest post
 
-<div id='bump'>
+<div>
     <section class="archive">
       <article class="archive-wrap">
           <ol class="post-preview-home">
-             <lh><h2><span>{{ page.title }}</span></h2></lh>
+             <lh><h2><span>Latest Post</span></h2></lh>
               {% for post in site.posts | limit:1 %}
               <li>
                 <div class="deets" itemscope itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
