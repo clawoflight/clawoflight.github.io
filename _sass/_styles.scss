@@ -347,7 +347,7 @@ header.site-header nav {
 // Custom css for the home page
 .archive-wrap-home {
     @include column(10);
-    max-width: 680px;
+
     display: block;
     margin: 0 auto;
     float: none;
