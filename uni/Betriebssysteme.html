@@ -160,7 +160,7 @@
 </li>
 </ul>
 
-<div class="highlight highlight-C"><pre>#<span class="pl-k">include</span> <span class="pl-s"><span class="pl-pds">&lt;</span>signal.h<span class="pl-pds">&gt;</span></span>
+<div class="highlight highlight-c"><pre>#<span class="pl-k">include</span> <span class="pl-s"><span class="pl-pds">&lt;</span>signal.h<span class="pl-pds">&gt;</span></span>
 
 <span class="pl-k">void</span> <span class="pl-en">signalhandler</span> (<span class="pl-k">int</span> signal)
 {
@@ -189,7 +189,7 @@
 </li>
 </ul>
 
-<div class="highlight highlight-C"><pre><span class="pl-c1">sigset_t</span> mask;
+<div class="highlight highlight-c"><pre><span class="pl-c1">sigset_t</span> mask;
 
 <span class="pl-en">sigemptyset</span> (&amp;mask); <span class="pl-c">// Initialize an empty mask</span>
 <span class="pl-en">sigfillset</span> (&amp;mask); <span class="pl-c">// Initialize a full mask</span>
@@ -237,9 +237,9 @@ However, <code>sleep</code>'s behavior is <strong>undefined</strong> if it gets 
 
 <p>You can use <code>mkfifo(1)</code> or <code>mkfifo(3)</code> to create a named pipe.</p>
 
-<div class="highlight highlight-C"><pre><span class="pl-k">int</span> <span class="pl-en">mkfifo</span>(<span class="pl-k">const</span> <span class="pl-k">char</span>* pathname, <span class="pl-c1">mode_t</span> mode); <span class="pl-c">// Make a pipe</span>
+<div class="highlight highlight-c"><pre><span class="pl-k">int</span> <span class="pl-en">mkfifo</span>(<span class="pl-k">const</span> <span class="pl-k">char</span>* pathname, <span class="pl-c1">mode_t</span> mode); <span class="pl-c">// Make a pipe</span>
 
-<span class="pl-en">fopen</span>() / fclose() <span class="pl-c">// Open the pipes with the appropriate mode, like a file</span></pre></div>
+<span class="pl-en">fopen</span>() / fclose(); <span class="pl-c">// Open the pipes with the appropriate mode, like a file</span></pre></div>
 
 <p>Don't forget that <strong>only one</strong> process can have the FIFO open in read- or write-mode at any time. Otherwise, all processes will receive EOF.</p>
 
@@ -365,7 +365,7 @@ It is implemented by <em>mapping virtual pages</em> of all processes to <em>the 
 <li>Don't forget to <em>unmap &amp; unlink</em> the shared memory when finished using <code>munmap(2)</code> <code>shm_unlink(3)</code>!</li>
 </ul>
 
-<div class="highlight highlight-C"><pre><span class="pl-k">int</span> fd; <span class="pl-c">// We will need a virtual file</span>
+<div class="highlight highlight-c"><pre><span class="pl-k">int</span> fd; <span class="pl-c">// We will need a virtual file</span>
 <span class="pl-k">if</span> ((fd = shm_open(<span class="pl-s"><span class="pl-pds">"</span>/shared_memory_name<span class="pl-pds">"</span></span>, O_CREAT | O_EXCL | O_RDWR, <span class="pl-c1">0660</span>)) == -<span class="pl-c1">1</span>) <span class="pl-c">// Create shared memory</span>
     <span class="pl-en">perror</span>(<span class="pl-s"><span class="pl-pds">"</span>Couldn't create shared memory<span class="pl-pds">"</span></span>);
 
@@ -411,7 +411,7 @@ shared_memory = (SHARED_MEMORY_DATATYPE *) ptr; <span class="pl-c">// Use the vo
 
 <p>POSIX named semaphores can be handled with <code>sem_open(3)</code> and <code>sem_unlink(3)</code> and used with <code>sem_wait(3)</code> and <code>sem_post(3)</code>.</p>
 
-<div class="highlight highlight-C"><pre><span class="pl-c1">sem_t</span>* sem1 = sem_open(<span class="pl-s"><span class="pl-pds">"</span>/semaphore_name<span class="pl-pds">"</span></span>, O_CREAT | O_EXCL, <span class="pl-c1">0660</span>, INITIAL_VALUE); <span class="pl-c">// Create a new semaphore and initialize it</span>
+<div class="highlight highlight-c"><pre><span class="pl-c1">sem_t</span>* sem1 = sem_open(<span class="pl-s"><span class="pl-pds">"</span>/semaphore_name<span class="pl-pds">"</span></span>, O_CREAT | O_EXCL, <span class="pl-c1">0660</span>, INITIAL_VALUE); <span class="pl-c">// Create a new semaphore and initialize it</span>
 <span class="pl-c1">sem_t</span>* sem2 = sem_open(<span class="pl-s"><span class="pl-pds">"</span>/semaphore_name<span class="pl-pds">"</span></span>, <span class="pl-c1">0</span>); <span class="pl-c">// Open an existing semaphore</span>
 
 <span class="pl-c">// ...</span>
@@ -470,7 +470,7 @@ Threads are a similar concept to processes with some key differences:</p>
 <h3>
 <a id="user-content-condition-variables" class="anchor" href="#condition-variables" aria-hidden="true"><span class="octicon octicon-link"></span></a>Condition variables</h3>
 
-<p>Condition variables are always associated to a mutex.</p>
+<p>Condition variables are always associated with a mutex.</p>
 
 <p>They have two operations that <strong>must be used within the critical region</strong> of the associated mutex:</p>
 
@@ -491,27 +491,35 @@ Threads are a similar concept to processes with some key differences:</p>
 </li>
 </ul>
 
-<div class="highlight highlight-C"><pre><span class="pl-c">/* This is an abstraction, not valid code! POSIX is less clean (obviously) */</span>
+<div class="highlight highlight-c"><pre><span class="pl-c">/* This example used to be pseudocode, but it is now valid C code! */</span>
+
+<span class="pl-c">// This is in the global scope!</span>
+<span class="pl-c1">pthread_mutex_t</span> mutex = PTHREAD_MUTEX_INITIALIZER; <span class="pl-c">// Static initializers only work when used *during declaration!*</span>
+<span class="pl-c1">pthread_cond_t</span> cond_var = PTHREAD_COND_INITIALIZER;
 
 <span class="pl-k">void</span> <span class="pl-en">read</span>() {
-    <span class="pl-c1">lock</span>(mutex); <span class="pl-c">// Enter critical region</span>
+    <span class="pl-c1">pthread_mutex_lock</span>(&amp;mutex); <span class="pl-c">// Enter critical region</span>
 
     <span class="pl-k">while</span>(id == <span class="pl-c1">0</span>) <span class="pl-c">// It is *very important* to use a while here instead of an if, as the condition might become invalid again for some processes!</span>
-        <span class="pl-c1">wait</span>(condition_variable); <span class="pl-c">// This is much less time-consuming than sleep(1), and we leave the critical region temporarily</span>
+        <span class="pl-c1">pthread_cond_wait</span>(&amp;cond_var, &amp;mutex); <span class="pl-c">// This is much less time-consuming than sleep(1), and we leave the critical region temporarily</span>
     <span class="pl-c1">printf</span>(<span class="pl-s"><span class="pl-pds">"</span><span class="pl-c1">%d</span><span class="pl-cce">\n</span><span class="pl-pds">"</span></span>, id);
 
-    <span class="pl-c1">unlock</span>(mutex); <span class="pl-c">// Leave critical region</span>
+    <span class="pl-c1">pthread_mutex_unlock</span>(&amp;mutex); <span class="pl-c">// Leave critical region</span>
 }
 
 <span class="pl-k">void</span> <span class="pl-en">write</span>() {
-    <span class="pl-c1">lock</span>(mutex); <span class="pl-c">// Enter critical region</span>
+    <span class="pl-c1">pthread_mutex_lock</span>(&amp;mutex); <span class="pl-c">// Enter critical region</span>
 
     id = <span class="pl-c1">5</span>;
-    <span class="pl-c1">signal</span>(condition_variable); <span class="pl-c">// Tell waiting readers that the id became valid</span>
+    <span class="pl-c1">pthread_cond_signal</span>(&amp;cond_var); <span class="pl-c">// Tell waiting readers that the id became valid</span>
 
-    <span class="pl-c1">unlock</span>(mutex); <span class="pl-c">// Leave critical region</span>
+    <span class="pl-c1">pthread_mutex_unlock</span>(&amp;mutex); <span class="pl-c">// Leave critical region</span>
 }
-</pre></div>
+
+<span class="pl-k">void</span> <span class="pl-en">cleanup</span>() {
+    <span class="pl-c1">pthread_mutex_destroy</span>(&amp;mutex);
+    <span class="pl-c1">pthread_cond_destroy</span>(&amp;cond_var);
+}</pre></div>
 
               </div>
             </div>
