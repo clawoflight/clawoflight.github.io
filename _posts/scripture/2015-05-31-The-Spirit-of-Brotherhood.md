@@ -5,7 +5,8 @@ category: scripture
 tags: ['God', 'Scripture', 'Bible', 'Verse']
 published: True
 comments: True
-permalink: draft.html
+date: 2015-05-30
+permalink: /draft.html
 ---
 
 {% comment %} Todo:
