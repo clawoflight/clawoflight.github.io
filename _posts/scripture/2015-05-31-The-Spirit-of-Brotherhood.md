@@ -6,7 +6,7 @@ tags: ['God', 'Scripture', 'Bible', 'Verse']
 published: True
 comments: True
 date: 2015-05-30
-permalink: /draft.html
+permalink: /draft/index.html
 ---
 
 {% comment %} Todo:
