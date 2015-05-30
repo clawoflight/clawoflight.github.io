@@ -5,8 +5,14 @@ category: scripture
 tags: ['God', 'Scripture', 'Bible', 'Verse']
 published: True
 comments: True
-permalink: /draft.html
+permalink: draft.html
 ---
+
+{% comment %} Todo:
+- complete the tags
+- write the description
+- Decide whether this should be 2 posts
+{% endcomment %}
 
 This post is a follow-up to [Heirs of The Spirit of His Son]({% post_url scripture/2015-05-23-Heirs-of-The-Spirit-of-His-Son %})
 
