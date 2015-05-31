@@ -2,8 +2,9 @@
 layout: post
 title: The Spirit of Brotherhood
 category: scripture
-tags: ['God', 'Scripture', 'Bible', 'Verse']
+tags: ['God', 'Scripture', 'Spirit', 'Holy', 'Bible', 'Verse', 'Galatians 6', 'Galatians 6:1-10', 'nature', 'renewal', 'heart', 'corruption', 'natural', 'way of the spirit' 'correction', 'relief', 'assistance', 'burdens', 'carry', 'humility', 'good works', 'investment', 'reap', 'sow', 'spend time']
 published: True
+description: "After having previously looked at the works of the Spirit in our hearts and for our salvation, this post examines the effect of the Spirit's work in our hearts on our communities."
 comments: True
 date: 2015-05-30
 ---
@@ -78,8 +79,7 @@ Instead, we should only compare ourselves to and judge our works by the standard
 > One's pride will bring him low, but he who is lowly in spirit will obtain honor. (Proverbs 28:23)
 
 ## Sow on The Spirit
-The next section begins with a warning: *Do not be deceived: God is not mocked, for whatever one sows, that he will also reap.* (v. 7) You cannot fool the living God. You cannot serve both God and yourself. I have written about Psalm 94:7-11 in [a previous post](http://bennett.piater.name/blog/scripture/2015/05/11/The-toughts-of-man-are-but-a-breath/)
- (feel free to read that if you are interested), and it applies here as well -- *Understand, O dullest of the people! Fools, when will you be wise? He who planted the ear, does he not hear? He who formed the eye, does he not see?* (Psalm 94:8-9) **Do not expect** God to provide for you, let alone save you if what you actually seek is the satisfaction of your fleshly pleasures! He is the LORD, why do you expect him to not see?
+The next section begins with a warning: *Do not be deceived: God is not mocked, for whatever one sows, that he will also reap.* (v. 7) You cannot fool the living God. You cannot serve both God and yourself. I have written about Psalm 94:7-11 in [a previous post](http://bennett.piater.name/blog/scripture/2015/05/11/The-toughts-of-man-are-but-a-breath/) (feel free to read that if you are interested), and it applies here as well -- *Understand, O dullest of the people! Fools, when will you be wise? He who planted the ear, does he not hear? He who formed the eye, does he not see?* (Psalm 94:8-9) **Do not expect** God to provide for you, let alone save you if what you actually seek is the satisfaction of your fleshly pleasures! He is the LORD, why do you expect him to not see?
 
 Most of us are not farmers, so we do not fully grasp the meaning of the picture Paul uses here, that we "`reap` whatever we `sow`". Translated to our capitalist times, this would be "you will get `returns` from what you `invest` in". In other words, if we spend our time, energy and money to gain fame or futile pleasures, that's exactly what we will get. God will give us what we want -- **beware from wanting something else more than him!** Romans warns us that *The wages of sin is death* (Romans 6:23), and we will get nothing else from investing into our flesh.
 
