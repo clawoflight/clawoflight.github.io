@@ -17,8 +17,10 @@ My blog-posts will mostly fit into one of a few categories, each of which has it
 * [Thoughts]({{ site.url }}/blog/thoughts)
 * [Programming]({{ site.url }}/blog/programming)
 
+I also have an [RSS-Feed]({{ site.url }}/feed.xml).
+
 ### Copyright
-If not explicitly stated otherwise, all content is licensed under [CC-BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)
+If not explicitly stated otherwise, all content is licensed under [CC-BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/).
 
 ### JS Disclaimer
 This website uses javascript but should be pefectly usable without it. Specifically:
