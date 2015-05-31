@@ -31,7 +31,7 @@
   <div class="page">
     <div class="preview-page">
     <div class="container">
-      <div class="repository-with-sidebar repo-container with-full-navigation">
+      <div class="repository-with-sidebar repo-container ">
 
         
           <div class="repository-content context-loader-container">
@@ -133,6 +133,13 @@
 <li>Children inherit the <em>offset</em> of every file the father has open.</li>
 </ul>
 </li>
+</ul>
+
+<p>A new process can be created with <code>fork(2)</code>. The child process will resume at the exact same location, use an <code>if</code> to make it do something different. Fork returns:</p>
+
+<ul>
+<li>0 for to child</li>
+<li>pid_t CHILD_PID for the parent.</li>
 </ul>
 
 <h2>
@@ -441,6 +448,18 @@ Threads are a similar concept to processes with some key differences:</p>
 </ul>
 
 <p>This means that threads are basically <em>sets of program counters and stack frames</em> for a same process, all running in parallel.</p>
+
+<div class="highlight highlight-c"><pre><span class="pl-c1">pthread_t</span> thread_id;
+
+<span class="pl-c">// Create a thread and make it execute thread_procedure()</span>
+<span class="pl-en">pthread_create</span>(&amp;thread_id, <span class="pl-c1">NULL</span>, thread_procedure, (<span class="pl-k">void</span> *) args); <span class="pl-c">// Note: use NULL for default thread attributes. args can also be null.</span>
+
+<span class="pl-c">// ...</span>
+
+<span class="pl-c">// Wait for the thread to complete it's job</span>
+<span class="pl-en">pthread_join</span>(thread_id, (<span class="pl-k">void</span> *) &amp;result_buff);</pre></div>
+
+<p>Both <code>pthread_create(3)</code> and <code>pthread_join(3)</code> return !0 on error. Use ifs to check for them!</p>
 
 <h2>
 <a id="user-content-ipc-4" class="anchor" href="#ipc-4" aria-hidden="true"><span class="octicon octicon-link"></span></a>IPC (4)</h2>
