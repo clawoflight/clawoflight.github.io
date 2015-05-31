@@ -8,13 +8,6 @@ comments: True
 date: 2015-05-30
 permalink: /draft/index.html
 ---
-
-{% comment %} Todo:
-- complete the tags
-- write the description
-- Decide whether this should be 2 posts
-{% endcomment %}
-
 This post is a follow-up to [Heirs of The Spirit of His Son]({% post_url scripture/2015-05-23-Heirs-of-The-Spirit-of-His-Son %})
 
 In my previous post, I wrote about some of the amazing gifts that God has given us through the Spirit, focusing on what the Spirit does for us personally. Now that we have him and that he freed us from the slavery of sin, from the bondage of our will to our flesh, what changes does he bring into our communities? 
