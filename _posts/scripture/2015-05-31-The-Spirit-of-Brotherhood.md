@@ -16,19 +16,24 @@ In case you are not acquainted with biblical vocabulary: In the New Testament, `
 ```
 Brothers, if anyone is caught in any transgression, you who are spiritual should restore him in a spirit of gentleness. Keep watch on yourself, lest you too be tempted.
 Bear one another's burdens, and so fulfill the law of Christ.
+```
 
+```
 For if anyone thinks he is something, when he is nothing, he deceives himself.
 But let each one test his own work, and then his reason to boast will be in himself alone and not in his neighbor.
 For each will have to bear his own load.
 Let the one who is taught the word share all good things with the one who teaches.
+```
 
+```
 Do not be deceived: God is not mocked, for whatever one sows, that will he also reap.
 For the one who sows to his own flesh will from the flesh reap corruption, but the one who sows to the Spirit will from the Spirit reap eternal life.
+```
 
+```
 And let us not grow weary of doing good, for in due season we will reap, if we do not give up.
 So then, as we have opportunity, let us do good to everyone, and especially to those who are of the household of faith.
 ```
-
 (Galatians 6:1-10)
 
 ## Correction With The Spirit of Gentleness
