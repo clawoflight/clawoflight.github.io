@@ -28,6 +28,7 @@ For the one who sows to his own flesh will from the flesh reap corruption, but t
 And let us not grow weary of doing good, for in due season we will reap, if we do not give up.
 So then, as we have opportunity, let us do good to everyone, and especially to those who are of the household of faith.
 ```
+
 (Galatians 6:1-10)
 
 ## Correction With The Spirit of Gentleness
