@@ -53,7 +53,7 @@
 <a href="#2015-05-22">2015-05-22</a>
 
 <ul>
-<li><a href="#multiple-processes-inheritance">Multiple processes: Inheritance</a></li>
+<li><a href="#multiple-processes-inheritance">Multiple Processes: Inheritance</a></li>
 <li>
 <a href="#ipc-1">IPC (1)</a>
 
@@ -73,11 +73,11 @@
 <a href="#ipc-2">IPC (2)</a>
 
 <ul>
-<li><a href="#named-pipes-fifos">Named pipes (FIFO's)</a></li>
+<li><a href="#named-pipes-fifos">Named Pipes (FIFO's)</a></li>
 <li><a href="#message-queues">Message Queues</a></li>
 </ul>
 </li>
-<li><a href="#avoiding-deadlocks">Avoiding deadlocks</a></li>
+<li><a href="#avoiding-deadlocks">Avoiding Deadlocks</a></li>
 </ul>
 </li>
 <li>
@@ -88,7 +88,7 @@
 <a href="#ipc-3">IPC (3)</a>
 
 <ul>
-<li><a href="#shared-memory">Shared memory</a></li>
+<li><a href="#shared-memory">Shared Memory</a></li>
 <li><a href="#semaphores">Semaphores</a></li>
 </ul>
 </li>
@@ -103,8 +103,29 @@
 <a href="#ipc-4">IPC (4)</a>
 
 <ul>
-<li><a href="#mutexes">Mutexes</a></li>
-<li><a href="#condition-variables">Condition variables</a></li>
+<li>
+<a href="#mutexes">Mutexes</a>
+
+<ul>
+<li><a href="#backoff-algorithm">Backoff Algorithm</a></li>
+</ul>
+</li>
+<li><a href="#condition-variables">Condition Variables</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#2015-06-03">2015-06-03</a>
+
+<ul>
+<li>
+<a href="#more-about-threads">More About Threads</a>
+
+<ul>
+<li><a href="#pthread_detach">Pthread_Detach</a></li>
+<li><a href="#cancelling-threads">Cancelling Threads</a></li>
+<li><a href="#exit-handlers">Exit Handlers</a></li>
 </ul>
 </li>
 </ul>
@@ -117,7 +138,7 @@
 <a id="user-content-2015-05-22" class="anchor" href="#2015-05-22" aria-hidden="true"><span class="octicon octicon-link"></span></a>2015-05-22</h1>
 
 <h2>
-<a id="user-content-multiple-processes-inheritance" class="anchor" href="#multiple-processes-inheritance" aria-hidden="true"><span class="octicon octicon-link"></span></a>Multiple processes: Inheritance</h2>
+<a id="user-content-multiple-processes-inheritance" class="anchor" href="#multiple-processes-inheritance" aria-hidden="true"><span class="octicon octicon-link"></span></a>Multiple Processes: Inheritance</h2>
 
 <ul>
 <li>Signals
@@ -238,7 +259,7 @@ However, <code>sleep</code>'s behavior is <strong>undefined</strong> if it gets 
 <a id="user-content-ipc-2" class="anchor" href="#ipc-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>IPC (2)</h2>
 
 <h3>
-<a id="user-content-named-pipes-fifos" class="anchor" href="#named-pipes-fifos" aria-hidden="true"><span class="octicon octicon-link"></span></a>Named pipes (FIFO's)</h3>
+<a id="user-content-named-pipes-fifos" class="anchor" href="#named-pipes-fifos" aria-hidden="true"><span class="octicon octicon-link"></span></a>Named Pipes (FIFO's)</h3>
 
 <p>Pipes are great when a parent wants to allow his children to communicate. However, what if we want to allow two unrelated processes separated by time to communicate as well?</p>
 
@@ -277,7 +298,7 @@ However, <code>sleep</code>'s behavior is <strong>undefined</strong> if it gets 
 <p>Messages can be sent or received with <code>msgsnd(2)</code> and <code>msgrcv(2)</code>, respectively.</p>
 
 <h2>
-<a id="user-content-avoiding-deadlocks" class="anchor" href="#avoiding-deadlocks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Avoiding deadlocks</h2>
+<a id="user-content-avoiding-deadlocks" class="anchor" href="#avoiding-deadlocks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Avoiding Deadlocks</h2>
 
 <p>Whenever two processes communicate using fifos or queues in both directions, be <strong>very careful</strong> to avoid deadlocks! The correct order is:</p>
 
@@ -342,7 +363,7 @@ However, <code>sleep</code>'s behavior is <strong>undefined</strong> if it gets 
 <a id="user-content-ipc-3" class="anchor" href="#ipc-3" aria-hidden="true"><span class="octicon octicon-link"></span></a>IPC (3)</h2>
 
 <h3>
-<a id="user-content-shared-memory" class="anchor" href="#shared-memory" aria-hidden="true"><span class="octicon octicon-link"></span></a>Shared memory</h3>
+<a id="user-content-shared-memory" class="anchor" href="#shared-memory" aria-hidden="true"><span class="octicon octicon-link"></span></a>Shared Memory</h3>
 
 <p>Shared memory is usually located in the free space in between the heap and the stack.
 It is implemented by <em>mapping virtual pages</em> of all processes to <em>the same physical page</em>.</p>
@@ -469,7 +490,7 @@ Threads are a similar concept to processes with some key differences:</p>
 
 <p>Mutexes are like semaphores, but they only have 2 states: 1 and 0. For our purposes, they function as a <strong>lock</strong> to protect critical regions, but they are more advanced than semaphores because condition variables can be used with them.</p>
 
-<p>They have two basic operations:</p>
+<p>They have three basic operations:</p>
 
 <ul>
 <li>lock
@@ -484,10 +505,33 @@ Threads are a similar concept to processes with some key differences:</p>
 <li>equivalent to semaphore.post()</li>
 </ul>
 </li>
+<li>trylock
+
+<ul>
+<li>tries to lock like lock</li>
+<li>instead of blocking if it's unavailable, returns EBUSY</li>
+</ul>
+</li>
+</ul>
+
+<h4>
+<a id="user-content-backoff-algorithm" class="anchor" href="#backoff-algorithm" aria-hidden="true"><span class="octicon octicon-link"></span></a>Backoff Algorithm</h4>
+
+<p>If several threads require the same resources in a different order, you will probably run into deadlocks. If you cannot make them lock the mutexes in the same order, there is another solution:</p>
+
+<ul>
+<li>The first mutex is locked normally</li>
+<li>The following mutexes are trylocked instead</li>
+<li>If trylock fails, <strong>unlock the preceding mutexes</strong> in reverse order
+
+<ul>
+<li>This will allow the other threads to access all the resources it needs.</li>
+</ul>
+</li>
 </ul>
 
 <h3>
-<a id="user-content-condition-variables" class="anchor" href="#condition-variables" aria-hidden="true"><span class="octicon octicon-link"></span></a>Condition variables</h3>
+<a id="user-content-condition-variables" class="anchor" href="#condition-variables" aria-hidden="true"><span class="octicon octicon-link"></span></a>Condition Variables</h3>
 
 <p>Condition variables are always associated with a mutex.</p>
 
@@ -539,6 +583,49 @@ Threads are a similar concept to processes with some key differences:</p>
     <span class="pl-c1">pthread_mutex_destroy</span>(&amp;mutex);
     <span class="pl-c1">pthread_cond_destroy</span>(&amp;cond_var);
 }</pre></div>
+
+<h1>
+<a id="user-content-2015-06-03" class="anchor" href="#2015-06-03" aria-hidden="true"><span class="octicon octicon-link"></span></a>2015-06-03</h1>
+
+<h2>
+<a id="user-content-more-about-threads" class="anchor" href="#more-about-threads" aria-hidden="true"><span class="octicon octicon-link"></span></a>More About Threads</h2>
+
+<h3>
+<a id="user-content-pthread_detach" class="anchor" href="#pthread_detach" aria-hidden="true"><span class="octicon octicon-link"></span></a>Pthread_Detach</h3>
+
+<p>Instead of joining a thread, one can also call <code>pthread_detach(3)</code>.
+The thread will then terminate on it's own as soon as it its finished.</p>
+
+<p>The thread can also be created with the attribute PTHREAD_CREATE_DETACHED.</p>
+
+<p>Pthread_detach doesn't work if a thread is already being waited for.</p>
+
+<h3>
+<a id="user-content-cancelling-threads" class="anchor" href="#cancelling-threads" aria-hidden="true"><span class="octicon octicon-link"></span></a>Cancelling Threads</h3>
+
+<p>Threads can be cancelled if you do not want them to terminate.</p>
+
+<p><code>pthread_testcancel(3)</code> is used to check if the thread should terminate. You can use this inside a loop if you want to be able to cancel the thread before it completes.</p>
+
+<div class="highlight highlight-c"><pre><span class="pl-en">pthread_cancel</span>(<span class="pl-c1">pthread_t</span> id); <span class="pl-c">// Send a cancel request to a thread</span>
+<span class="pl-en">pthread_testcancel</span>(<span class="pl-k">void</span>); <span class="pl-c">// Check if this thread should cancel</span></pre></div>
+
+<p>The way a thread reacts to cancel requests can be customized:</p>
+
+<div class="highlight highlight-c"><pre><span class="pl-en">pthread_setcancelstate</span>(PTHREAD_CANCEL_DISABLE, ...); <span class="pl-c">// Suspend cancel requests</span>
+<span class="pl-en">pthread_setcancelstate</span>(PTHREAD_CANCEL_ENABLE, ...); <span class="pl-c">// Enable cancel requests</span>
+
+<span class="pl-en">pthread_setcanceltype</span>(PTHREAD_CANCEL_DEFERRED,...); <span class="pl-c">// Only cancel during a pthread_testcancel</span>
+
+<span class="pl-en">pthread_setcanceltype</span>(PTHREAD_CANCEL_ASYNCHRONOUS,...); <span class="pl-c">// Immediately cancel uppon receiving a request</span></pre></div>
+
+<h3>
+<a id="user-content-exit-handlers" class="anchor" href="#exit-handlers" aria-hidden="true"><span class="octicon octicon-link"></span></a>Exit Handlers</h3>
+
+<p>Threads can add exit handlers that will be called in reverse installation order when the threads exit. You can use this e.g. to free memory, close files, etc.</p>
+
+<div class="highlight highlight-c"><pre><span class="pl-en">pthread_cleanup_push</span>(<span class="pl-k">void</span> (* routine) (<span class="pl-k">void</span> *), void *arg);
+<span class="pl-en">pthread_cleanup_pop</span>(<span class="pl-k">int</span> execute); <span class="pl-c">// if execute != 0, execute the function, otherwise only remove it.</span></pre></div>
 
               </div>
             </div>
