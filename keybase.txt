@@ -1,0 +1,73 @@
+https://keybase.io/clawoflight
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://bennett.piater.name
+  * I am clawoflight (https://keybase.io/clawoflight) on keybase.
+  * I have a public key with fingerprint 871F 1047 7DB3 DDED 5FC4  47B2 26C7 E577 EF96 7808
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "client": {
+            "name": "keybase.io node.js client",
+            "version": "0.7.7"
+        },
+        "key": {
+            "fingerprint": "871f10477db3dded5fc447b226c7e577ef967808",
+            "host": "keybase.io",
+            "key_id": "26C7E577EF967808",
+            "uid": "5663d85a1a62631001165658a2136c19",
+            "username": "clawoflight"
+        },
+        "merkle_root": {
+            "ctime": 1433506301,
+            "hash": "e50d5ddad801702e2d9f9d8d421dd1b2759ffe5014188c5c9b62ccfe06ffec4525f85ed230b231a6e4ee0917bfb995551f8fd018577acfa29438162a1af62c9a",
+            "seqno": 240965
+        },
+        "service": {
+            "hostname": "bennett.piater.name",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1433506344,
+    "expire_in": 157680000,
+    "prev": "9228ae30983bb2d6e06977ef4181c8d013037c092d55ca2017f013a07f25fbd0",
+    "seqno": 11,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v2
+
+owFdkltoHFUYx3eNjVulJQi1D60Y5qGwuNmcc2bOZdZAqb1RxAbENihtN+e6mWYz
+s52d5rIxRSSKPhlUClLbECLYFgTBNKkPJkJJQzBa7FMtSNsHxdCiBIuKreKZEK/z
+NPPN7/uf7///ztiGpkwuu23h24EfTw7msp8vi8yBY2/lhx0RqSGnNOzIaqDDJH0L
+eZ92Sk6vHhK8rotB1BpGSheP1lvXmILTr+N6EIWWAkVapM5IIcXTZhOEFR3X4iDV
+chiFBgKPUiVcpbTCRnoeFQgRSTWmVBufUAaYleyJ6sl/TnVWNcuBslVEdtLdlt+9
+52/++OoPTIirGOaQE0RcCACEBBPMOIIukdBPwbqO1yzJKh+ITDWo9CTpyH067q3q
+chxFq75lEqQU9FwXA+ICaIfi9R7bpzFQWCmuGIAUII2Ub3zFlIegUlAgin1jLAQ9
+yJjE0hcESWk0ILYsPYywYVgr5AKBXDuq9rQGPqTCCN/HGEPDjAKQWYdcGo58z2WQ
+IOvKWCGfWxd1fSyMnBLygE/wSPod9wdSp3Onya0ZFDoMdZIUawFPdFxcrRacWhwl
+kYyqFuhJklop9Z5cHKqlHQNalNe0yiIIlV3fv/cLLfq/XDyv4OjBWhDrcpASmBIG
+7JOeo/utpI8Q49oFPnOFQIrYGPx01TYcKJn16QKXSuAjhbHkyEZqbI0DamxOQoF/
+3EK7goRXrGY9qIQ8OR5rZ+SN7NYHM9lcpnndA+kNzjy8vuWva31230P3Nyy8+kvX
+LdF142ORNJ27fu3p9y8uv51bObOx5ZV4oW966/5nRg6ty07/fvORuT/uXRlfOdRy
+oruj7+78y/vvbldtXZfp/Zfa73Xsev7W2PWZ8UZmKjh/cLrKaxsbv37RPfPpT7eX
+891m7ueO985OTPkfjs+1nunde+C1yfkL5x598/DSOztnT714amjLkwubTiy27z26
+7Zuvbh8xj5H205Pf58b2bW40dT134/XTPJ8/qArdvVNa3SnezI9uf/eDKur8um3w
+hZXPFn+YXGybH3WadzU3xj/ZPDP823dL023XHn+itOOpuBJturLkyTvP0sbEhS+j
+Pec7J3bk1x++2nkVz47OfnRky8lLfwI=
+=gIOY
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/clawoflight
