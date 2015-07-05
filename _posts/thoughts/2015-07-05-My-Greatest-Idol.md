@@ -7,7 +7,7 @@ published: true
 comments: true
 date: 2015-07-05
 image:
-	feature: notebook.jpg
+  feature: notebook.jpg
 ---
 
 I recently had a pretty bad day. I had slept poorly, woken by a headache multiple times, and the headache persisted. I was really tired, and the addition of the headache meant that I couldn't do a whole lot. The ridiculous heat on top of that didn't help, either.
