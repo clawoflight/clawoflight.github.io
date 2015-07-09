@@ -5,7 +5,6 @@ description:
 tags: ['God', 'Scripture', 'Spirit', 'Holy', 'Bible',  ]
 published: true
 comments: true
-date: 2015-07-12
 image:
   feature: https://upload.wikimedia.org/wikipedia/commons/e/e8/Jerus-n4i.jpg
 permalink: draft/index.html
