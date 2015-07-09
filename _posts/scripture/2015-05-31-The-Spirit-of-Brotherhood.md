@@ -2,13 +2,13 @@
 layout: post
 title: The Spirit of Brotherhood
 category: scripture
-description: After having previously looked at the works of the Spirit in our hearts and for our salvation, this post examines the effect of the Spirit's work in our hearts on our communities.
+description: "After having previously looked at the works of the Spirit in our hearts and for our salvation, this post examines the effect of the Spirit's work in our hearts on our communities."
 tags: ['God', 'Scripture', 'Spirit', 'Holy', 'Bible', 'Verse', 'Galatians 6', 'Galatians 6:1-10', 'nature', 'renewal', 'heart', 'corruption', 'natural', 'way of the spirit' 'correction', 'relief', 'assistance', 'burdens', 'carry', 'humility', 'good works', 'investment', 'reap', 'sow', 'spend time']
 published: True
 comments: True
 date: 2015-05-30
 ---
-This post is a follow-up to [Heirs of The Spirit of His Son](http://bennett.piater.name/blog/scripture/2015/05/22/Heirs-of-The-Spirit-of-His-Son/)
+This post is a follow-up to [Heirs of The Spirit of His Son](http://bennett.piater.name/blog/scripture/2015/05/22/Heirs-of-The-Spirit-of-His-Son/). 
 
 In my previous post, I wrote about some of the amazing gifts that God has given us through the Spirit, focusing on what the Spirit does for us personally. Now that we have him and that he freed us from the slavery of sin, from the bondage of our will to our flesh, what changes does he bring into our communities? 
 

@@ -1,8 +1,8 @@
 ---
 title: "So, You Want to Build Me a Temple?"
 category: scripture
-description: 
-tags: ['God', 'Scripture', 'Spirit', 'Holy', 'Bible',  ]
+description: "King David wants build God a temple. The text allows for interesting lessons about love for God, humility, and worship."
+tags: ['God', 'Scripture', 'Spirit', 'Holy', 'Bible', 'humility', 'love', 'worship', 'King David', 'covenant ark', 'temple', 'providence', '2 Samuel 7', 'creator', 'give God', 'honor', 'glory' ]
 published: true
 comments: true
 date: 2015-07-12
@@ -13,7 +13,6 @@ image:
 {% comment %}
 TODO:
 - Check the tenses. I should stick to either the past, or the present tense when speaking about David.
-- Find useful places to put quotes (>)
 {% endcomment %}
 
 ```
@@ -22,7 +21,7 @@ the king said to Nathan the prophet, "See now, I dwell in a house of cedar, but 
 ```
 (2 Samuel 7:1-2)
 
-After having waited for a very long time, David was finally made king of Israel. He knew full well that he owed God every little bit of that. God had chosen him, protected him during the years of persecution by Saul and destroyed his enemies for him. David knew that he was in God's hands and that not he was strong, but God.
+After having waited for a very long time, David was finally made king of Israel. He knew full well that **he owed God every little bit** of that. God had chosen him, protected him during the years of persecution by Saul and destroyed his enemies for him. David knew that he was in God's hands and that not he was strong, but God.
 
 This is the present setting; David is at rest in the brand-new palace he had built for himself, peaceful because the Lord had given him rest from his enemies. And while he is in his palace, he begins to think about the covenant ark.
 
@@ -46,11 +45,11 @@ God also does not require our honor; How could we be so foolish as to think that
 ## Humility before God ##
 At the end of the chapter, David humbles himself before God in a deeply beatiful way. I already quoted verses 18 and 21 above, which show just how humble David becomes after God replies to him. The final lesson that I want to draw from the text is this: True humility, reliance on God's grace and trust in his perfect plan produce great joy and absolutely beautiful worship.
 
-David's remarkable focus on God's power and will, deep understanding of how frail he was as opposed to God's absolute power and might as well as his trust in God's guidance and protection produced humility at the deepest level within him. This humility produced thankfullness, which in turn brought forth great joy in God. This is the essence of worship: Humbly enjoying and praising God for what he is, what he has done and what he gives us!
+David's remarkable focus on God's power and will, deep understanding of how frail he was as opposed to God's absolute power and might as well as his trust in God's guidance and protection produced humility at the deepest level within him. This humility produced thankfullness, which in turn brought forth great joy in God. **This is the essence of worship: Humbly enjoying and praising God for what he is, what he has done and what he gives us!**
 
 Let us try to balance these two characteristics that our love for God should have;
-Let us make God the center of our lives, seeking our pleasure, wisdom, guidance and relief in his word, as the psalmist says (Psalm 119).
-Let us also remember that Jesus is our savior, that our hands are empty before his throne and that we cannot do anything but cling to his cross. We fully rely on his saving grace! We cannot "give" God anything, only thankfully accept the salvation he freely gave us and everything else that he keeps giving us!
+Let us make God the **center of our lives**, seeking our pleasure, wisdom, guidance and relief in his word, as the psalmist says (Psalm 119).
+Let us also remember that Jesus is our savior, that **our hands are empty** before his throne and that we cannot do anything but cling to his cross. We fully rely on his saving grace! We cannot "give" God anything, only thankfully accept the salvation he freely gave us and everything else that he keeps giving us!
 
 > For even the Son of Man came not to be served but to serve, and to give his life as a ransom for many.
 > Mark 10:45
