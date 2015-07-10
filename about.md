@@ -2,10 +2,11 @@
 layout: post
 permalink: /about/index.html
 title: About This Site
-description: This is my personal writing space. Part of it is a blog, part of it will probably end up being random pages about whatever interests me. It's clean, it's beautiful, I like it a lot!
+description: "This is my personal writing space. Part of it is a blog, part of it will probably end up being random pages about whatever interests me. It's clean, simple, and beautiful, I like it a lot!"
 tags: [about, blog, site]
 image:
   feature: blurred.jpg
+  source: © 2015 Bennett Piater (CC-BY-SA 4.0)
 ---
 
 ### Blog-Post Categories
