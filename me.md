@@ -3,7 +3,8 @@ title: About Me
 layout: post
 permalink: /me/index.html
 image:
-    feature: Innsbruck.jpg
+  feature: Innsbruck.jpg
+  source: "Pinetree, © 2015 Bennett Piater (CC-BY-SA 4.0)"
 ---
 - Name: Bennett Piater
 - Location: [Innsbruck, Austria](https://www.google.com/maps/place/Innsbruck,+Austria/@47.2854551,11.3787899,25120m/data=!3m2!1e3!4b1!4m2!3m1!1s0x479d6ecfe1f8ca73:0x9d201c7d281d9b0d!6m1!1e1?hl=en)
