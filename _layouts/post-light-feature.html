@@ -7,7 +7,7 @@
   <div class="overlay overlay-lighter"></div>
   <div class="featured-image" style="background-image: url({{ site.url }}/images/{{ page.image.feature }})"></div>
   {% if page.image.source %}
-    <div class="image-source"><small>Image: {{ page.image.source }}</small></div>
+    <div class="image-source"><small>Image: {{ page.image.source | markdownify }}</small></div>
   {% endif %}
 {% else %}
 
