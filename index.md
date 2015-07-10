@@ -3,7 +3,8 @@ title: Bennett Piater
 description: "My Blog, Random Thoughts and Notes, Personal Projects and Other Stuff."
 layout: landing
 image:
-    feature: Innsbruck.jpg
+  feature: Innsbruck.jpg
+  source: "View of Innsbruck, © 2015 Bennett Piater (CC-BY-SA 4.0)"
 ---
 
 ## Uni-Gemeinsam
