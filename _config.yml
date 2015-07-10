@@ -57,6 +57,9 @@ kramdown:
 sass:
   style: :compressed
 
+gems:
+  - jekyll-sitemap
+
 # https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink: /blog/:categories/:year/:month/:day/:title/
 
