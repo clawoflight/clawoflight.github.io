@@ -8,7 +8,7 @@ comments: true
 date: 2015-07-12
 image:
   feature: https://upload.wikimedia.org/wikipedia/commons/e/e8/Jerus-n4i.jpg
-  source: [Wikipedia](https://en.wikipedia.org/wiki/File:Jerus-n4i.jpg), public domain
+  source: <a href="https://en.wikipedia.org/wiki/File:Jerus-n4i.jpg">Wikipedia</a>, public domain
 ---
 
 {% comment %}
