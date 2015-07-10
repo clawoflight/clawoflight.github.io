@@ -44,6 +44,16 @@ small {
     font-size: $fs5;
 }
 
+/* Custom change for copyright */
+.image-source {
+    font-family: $sans;
+    font-size: $fs5;
+    font-weight: bold;
+    color: $grey-light;
+    text-transform: uppercase;
+    text-align: center;
+}
+
 .hilite {
     display: inline-block;
     padding: 0 0.3em;
