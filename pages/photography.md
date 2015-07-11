@@ -5,7 +5,7 @@ tags: ['photography', 'art', 'images', 'HDR', 'camera', 'landscapes', 'Creative 
 permalink: /photography/index.html
 image:
   feature: blurred.jpg
-  source: "View of Innsbruck, © 2015 Bennett Piater (CC-BY-SA 4.0)"
+  source: "Pinetree, © 2015 Bennett Piater (CC-BY-SA 4.0)"
 ---
 
 I really enjoy taking pictures, and I find that they are a great way to rejoice in God's amazing creation. This page contains some of my favorite pictures I hope you will enjoy!
