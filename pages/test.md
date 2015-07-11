@@ -5,7 +5,7 @@ permalink: /test.html
 
 code with liquid:
 
-{% highlight python linenos %}
+{% highlight Python linenos %}
 while is_running():
     task = get_next_task_from_queue()
     if task:
@@ -16,7 +16,7 @@ while is_running():
 
 code with backticks:
 
-```python
+```Python
 while is_running():
     task = get_next_task_from_queue()
     if task:
