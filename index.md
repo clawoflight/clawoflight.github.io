@@ -15,4 +15,4 @@ You can find it's homepage [here](/uni).
 
 ## Blog
 
-My Blog is probably what you are looking for. You can click on the corresponding menu item in the top right corner, or simply [here](/blog).
+My Blog is probably what you are looking for. You can click on the corresponding menu item in the top right corner, or simply [here](/blog). Details are available in the [about](/about) page.

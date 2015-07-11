@@ -11,7 +11,7 @@ image:
 
 ### Blog-Post Categories
 
-My blog-posts will mostly fit into one of a few categories, each of which has it's own landing page. Please use that if you are only interested in a specific part of my content!
+My blog-posts will mostly fit into one of a few categories, each of which has it's own landing page. Please use that if you are only interested in a specific part of my content! The majority of my posts are in-depth bible studies.
 
 * [Scripture]({{ site.url }}/blog/scripture)
 * [Announcements]({{ site.url }}/blog/announcements)
