@@ -5,7 +5,7 @@ permalink: /test.html
 
 code with liquid:
 
-{% highlight Python linenos %}
+{% highlight python3 linenos %}
 while is_running():
     task = get_next_task_from_queue()
     if task:
