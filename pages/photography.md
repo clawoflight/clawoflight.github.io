@@ -14,26 +14,26 @@ The pictures are taken with a Sony Xperia Z1 Compact and sometimes edited with G
 As usual, everything is CC-BY-SA 4.0, feel free to use my work!
 
 <figure>
-<img src="/images/photography/Innsbruck-with-Nordkette.jpeg">
+<img src="/images/Photography/Innsbruck-with-Nordkette.jpeg">
 <figcaption>Innsbruck with the Nordkette</figcaption>
 </figure>
 
 <figure>
-<img src="/images/photography/Nordkette.jpeg">
+<img src="/images/Photography/Nordkette.jpeg">
 <figcaption>A stunning view of the Nordkette mountain chain</figcaption>
 </figure>
 
 <figure>
-<img src="/images/photography/bloody-sky-over-Innsbruck.jpeg">
+<img src="/images/Photography/bloody-sky-over-Innsbruck.jpeg">
 <figcaption>The combination of blood and snow kinda sounds like snow white...</figcaption>
 </figure>
 
 <figure>
-<img src="/images/photography/beautiful-white-flowers.jpeg">
+<img src="/images/Photography/beautiful-white-flowers.jpeg">
 <figcaption>Their pure white caught my eye</figcaption>
 </figure>
 
 <figure>
-<img src="/images/photography/pinetree.jpeg">
+<img src="/images/Photography/pinetree.jpeg">
 <figcaption>A majestic pinetree right next to my house</figcaption>
 </figure>
