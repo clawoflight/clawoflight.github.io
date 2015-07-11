@@ -6,7 +6,7 @@ description: "This is my personal writing space. Part of it is a blog, part of i
 tags: [about, blog, site]
 image:
   feature: blurred.jpg
-  source: "View of Innsbruck, © 2015 Bennett Piater (CC-BY-SA 4.0)"
+  source: "Pinetree, © 2015 Bennett Piater (CC-BY-SA 4.0)"
 ---
 
 ### Blog-Post Categories
