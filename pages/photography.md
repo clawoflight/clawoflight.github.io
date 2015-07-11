@@ -29,7 +29,7 @@ As usual, everything is CC-BY-SA 4.0, feel free to use my work!
 </figure>
 
 <figure>
-<img src="/images/Photography/beautiful-white-flowers.jpeg">
+<img src="/images/Photography/beautiful-white-flowers.jpg">
 <figcaption>Their pure white caught my eye</figcaption>
 </figure>
 
