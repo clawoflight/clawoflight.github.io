@@ -31,7 +31,7 @@ while is_running():
 </figure>
 
 <figure>
-<img src="/images/innsbruck.jpg">
+<img src="/images/Innsbruck.jpg">
 <img src="/images/typewriter.jpg">
 <figcaption>2 images?</figcaption>
 </figure>
