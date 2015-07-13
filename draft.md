@@ -1,6 +1,7 @@
 ---
 title: 
 category: scripture
+layout: post
 description: 
 tags: ['God', 'Scripture', 'Spirit', 'Holy', 'Bible',  ]
 permalink: /draft/index.html
