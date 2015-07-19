@@ -8,7 +8,7 @@ comments: true
 favorited: true
 date: 2015-07-19
 image:
-  feature: http://www.google.com/url?sa=i&source=imgres&cd=&ved=0CAUQjBwwAA&url=https%3A%2F%2Ffarm8.staticflickr.com%2F7269%2F7693603098_fb011037e0_o_d.jpg&ei=KpajVZaoKsOasgH6gZ24CQ&psig=AFQjCNE8kI8QCo7J9MJHYiLV9OTOtaAcWQ&ust=1436870570781578
+  feature: https://farm8.staticflickr.com/7269/7693603098_fb011037e0_o_d.jpg
   source: '<a href="https://www.dvidshub.net/image/635796/sunset-silhouette#.UBmXBUTlVhE#ixzz22KWo1D9B">1st Lt. Jason Uhlig</a>, public domain'
 ---
 {% comment %}
