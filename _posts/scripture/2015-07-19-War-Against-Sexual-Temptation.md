@@ -1,7 +1,7 @@
 ---
 title: "War Against Sexual Temptation"
 category: scripture
-description: "It affects all of us. This study is an attempt to learn from King David's mistakes and to learn tactics applicable in our own lives"
+description: "Sexual temptation affects all of us. This study is an attempt to learn from King David's mistakes and to learn tactics applicable in our own lives."
 tags: ['God', 'Scripture', 'Spirit', 'Holy', 'Bible', 'porn', 'pornography', 'sin', 'king david', 'bathsheba', '2 Samuel 11', '2 Samuel 12', 'Psalm 51', 'Proverbs 5', 'sexual purity', 'temptation', 'war', 'verses against sexual temptation', 'idleness', 'procastination', 'tired', 'bed', 'playing with fire', 'seduction', 'consequences of sin']
 published: true
 comments: true
