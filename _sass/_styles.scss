@@ -68,8 +68,10 @@ blockquote, blockquote p {
     text-align: center;
     color: lighten($black, .2);
     margin-bottom: $lh;
-
     font-size: $fs3;
+}
+
+blockquote {
     border-radius: 10px;
     border-left-width: 10px;
     border-right-width: 10px;
