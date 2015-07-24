@@ -68,6 +68,15 @@ blockquote, blockquote p {
     text-align: center;
     color: lighten($black, .2);
     margin-bottom: $lh;
+
+    font-size: $fs3;
+    border-radius: 10px;
+    border-left-width: 10px;
+    border-right-width: 10px;
+    border-left-color: $accent;
+    border-right-color: $accent;
+    border-left-style: solid;
+    border-right-style: solid;
 }
 
 
@@ -789,6 +798,9 @@ h1 {
 
 blockquote, blockquote p {
     font-size: $fs3;
+    border-radius: 8px;
+    border-left-width: 8px;
+    border-right-width: 8px;
 }
 
 footer {
