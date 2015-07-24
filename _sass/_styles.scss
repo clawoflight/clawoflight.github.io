@@ -800,6 +800,9 @@ h1 {
 
 blockquote, blockquote p {
     font-size: $fs3;
+}
+
+blockquote {
     border-radius: 8px;
     border-left-width: 8px;
     border-right-width: 8px;
@@ -833,6 +836,10 @@ footer {
    ========================================================================== */
 
 @media only screen and (max-width: 500px) {
+    blockquote, blockquote p {
+    font-size: $fs4;
+}
+
     footer {
 
     .social {
