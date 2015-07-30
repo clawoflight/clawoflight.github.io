@@ -72,15 +72,13 @@ blockquote, blockquote p {
 }
 
 blockquote {
+    background-color: #f1f1f1;
     padding-left: 5px;
     padding-right: 5px;
-    border-radius: 10px;
-    border-left-width: 10px;
-    border-right-width: 10px;
+    border-radius: 5px;
+    border-left-width: 8px;
     border-left-color: $accent;
-    border-right-color: $accent;
     border-left-style: solid;
-    border-right-style: solid;
 }
 
 
