@@ -32,7 +32,7 @@ layout: none
   </author>
   <content type="html">
   {% if post.image.feature %}
-  &lt;img alt="Header Image" src="{{ post.image.feature }}"&gt;
+  &lt;img alt=&quot;Header Image&quot; src=&quot;{{ post.image.feature }}&quot;&gt;
   {% endif %}
   {{ post.content | xml_escape }}
   &lt;p&gt;&lt;a href=&quot;{{ site.url }}{{ post.url }}&quot;&gt;{{ post.title }}&lt;/a&gt; was originally published by {{ site.owner.name }} in the category "{{ post.category }}" at &lt;a href=&quot;{{ site.url }}&quot;&gt;{{ site.title }}&lt;/a&gt; on {{ post.date | date: "%B %d, %Y" }}.&lt;/p&gt;</content>
