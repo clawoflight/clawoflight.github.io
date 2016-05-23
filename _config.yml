@@ -42,6 +42,7 @@ timezone:    Europe/Vienna
 future:      false
 highlighter: rouge
 markdown:    kramdown
+encoding: UTF-8
 
 kramdown:
   auto_ids: true
