@@ -13,6 +13,6 @@ image:
 - GitHub: [@clawoflight](https://github.com/ClawOfLight)
 - GPG ID: [Keybase.io](https://keybase.io/clawoflight)
 
-I am currently studying Computer Science in Innsbruck. I am a believing Christian (as you can probably tell from my blog), avid reader (loving John Piper and Tolkien) and used to be a gamer. Now, I spend most of my time with God or programming / Linux related stuff.
+I am currently studying Computer Science in Innsbruck. I am a believing Christian (as you can probably tell from my blog), avid reader (loving John Piper and Tolkien) and used to be a gamer. Now, I spend most of my time with God or programming / Linux related stuff and reading.
 
-Currently running Debian GNU/Linux (Jessie), will be switching to testing/Stretch as soon as that calms down. I will eventually switch to Arch though.
+Currently running Debian GNU/Linux (testing/Stretch) on my desktop and Arch Linux on my laptop.
