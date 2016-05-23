@@ -5,7 +5,7 @@ description: After having previously looked at the works of the Spirit in our he
 tags: ['God', 'Scripture', 'Spirit', 'Holy', 'Bible', 'Verse', 'Galatians 6', 'Galatians 6:1-10', 'nature', 'renewal', 'heart', 'corruption', 'natural', 'way of the spirit' 'correction', 'relief', 'assistance', 'burdens', 'carry', 'humility', 'good works', 'investment', 'reap', 'sow', 'spend time']
 published: false
 comments: true
-date: 2015-05-31
+date: 2015-05-30
 ---
 This post is a follow-up to [Heirs of The Spirit of His Son](http://bennett.piater.name/blog/scripture/2015/05/22/Heirs-of-The-Spirit-of-His-Son/). 
 
