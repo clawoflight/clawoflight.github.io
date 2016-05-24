@@ -9,6 +9,7 @@ image:
 - Name: Bennett Piater
 - Location: [Innsbruck, Austria](https://www.google.com/maps/place/Innsbruck,+Austria/@47.2854551,11.3787899,25120m/data=!3m2!1e3!4b1!4m2!3m1!1s0x479d6ecfe1f8ca73:0x9d201c7d281d9b0d!6m1!1e1?hl=en)
 - Email: [bennett@piater.name](mailto:bennett@piater.name)
+- Reading list: [Goodreads](https://www.goodreads.com/user/show/53332147-bennett-piater)
 - Twitter: [@clawoflight](https://twitter.com/ClawOfLight)
 - GitHub: [@clawoflight](https://github.com/ClawOfLight)
 - GPG ID: [Keybase.io](https://keybase.io/clawoflight)
