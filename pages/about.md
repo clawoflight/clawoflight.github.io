@@ -26,7 +26,6 @@ If not explicitly stated otherwise, all content is licensed under [CC-BY-SA 4.0]
 ### JS Disclaimer
 This website uses javascript but should be pefectly usable without it. Specifically:
 
-* `Google Analytics` basic version (feel free to block this, I do so myself!)
 * Bibleserver.com's `parser.js` (for linking of scripture passages)
 * `Modernizr.js` (for browser feature detection)
 * `Retina.js` (for retina image version support)
