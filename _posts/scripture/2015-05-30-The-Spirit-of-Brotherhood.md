@@ -1,4 +1,4 @@
----
+L---
 title: "The Spirit of Brotherhood"
 category: scripture
 description: After having previously looked at the works of the Spirit in our hearts and for our salvation, this post examines the effect of the Spirit's work in our hearts on our communities.
