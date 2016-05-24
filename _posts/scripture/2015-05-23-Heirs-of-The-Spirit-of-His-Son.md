@@ -1,5 +1,6 @@
 ---
 title: Heirs of The Spirit of His Son
+category: scripture
 tags: ['Galatians 4:3-7', 'Galatians 4', 'Spirit', 'gift', 'inheritance', 'children', 'heirs', 'God', 'adoption', 'freedom', 'slavery', 'purification', 'sanctification', 'glorification', 'Romans 8', 'Romans 8:14', 'Galatians 5:16', 'appointed time', 'access to the father', 'transformation', 'assurance', 'heart']
 date: 2015-05-22
 description: What is the meaning of Galatians 4:6, where God is said to have sent the Spirit of his Son into our hearts? What is this great gift of his, and why should we care that we are sons of God?

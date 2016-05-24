@@ -1,8 +1,8 @@
 ---
 title: The Thoughts of Man Are but a Breath
+category: scripture
 description: God knows everything we do, and, more importantly, that we cannot do anything. He instructs us and does not forsake his people, but will also judge humanity when his day comes.
 layout: post
-category: scripture
 tags: truth ruler king judgement knowledge creator wisdom breath
 ---
 ```

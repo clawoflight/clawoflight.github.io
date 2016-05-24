@@ -1,8 +1,8 @@
 ---
 title: The Serpent's Dominion Is Fading
+category: scripture
 layout: post
 description: This short passage I read yesterday was very encouraging to me. It is obvious that God preserved Paul from the viper’s venom, but I think that there is more to this encounter than is superficially visible.
-category: scripture
 tags: serpent Satan dominion "acts 28" Paul snake venomous isle preservation viper evil symbolism authority wonder
 date: 2015-05-13
 ---
