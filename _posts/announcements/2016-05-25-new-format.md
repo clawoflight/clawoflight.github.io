@@ -4,6 +4,9 @@ category: announcements
 published: true
 comments: false
 date: 2016-05-25
+image:
+  feature: default-headers/dawn-field-trees-clouds-CC0.jpg
+  source: "© <a href="https://creativecommons.org/publicdomain/zero/1.0/">Public Domain</a>"
 ---
 
 I have decided to start writing again. Because university keeps me very busy, I do not have the time to write long Bible-study posts like I do in the summer. However, I will start putting more of my thoughts to ~~paper~~ pixels and hopefully think more clearly as a result.
