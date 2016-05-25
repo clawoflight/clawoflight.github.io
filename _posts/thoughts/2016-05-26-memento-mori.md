@@ -21,9 +21,9 @@ Time is valuable. In fact, it's arguably the most valuable resource any of us ha
 
 I am currently reading a great [book][calvin] about Calvin's preaching. I quote Steve Lawson:
 
-`As a result of all this study in the Word, Calvin knew much of it virtually by memory, and most of it was available to him by quick and effective reference. Further, he had assimilated the metaphors and images of the Bible, its concepts and its nuances, into his life and thinking.`
+>As a result of all this study in the Word, Calvin knew much of it virtually by memory, and most of it was available to him by quick and effective reference. Further, he had assimilated the metaphors and images of the Bible, its concepts and its nuances, into his life and thinking.
 
-`Week after week of careful preparation for his sequential expository preaching produced a soaring view of God that caused Calvin's mind and heart to be stayed upon his Redeemer.`
+>Week after week of careful preparation for his sequential expository preaching produced a soaring view of God that caused Calvin's mind and heart to be stayed upon his Redeemer.
 
 I will try to do more and more of that. I want to soak so much of God's Word that God becomes the highest, most magnificent object of my thought.
 
