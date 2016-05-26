@@ -393,15 +393,14 @@ header.site-header nav {
             margin-bottom: $lh*4;
             position: relative;
 
-            a {
-                font-family: 'Calendas Plus Italic';
+            a.hovericon {
                 position: relative;
                 &:hover {
                     @include transit;
                 }
             }
 
-            a:hover:before {
+            a.hovericon:hover:before {
                 content:'...';
                 color: $grey-light;
                 font-family: $sans;
@@ -414,7 +413,7 @@ header.site-header nav {
                 @include transit;
             }
 
-            a:before {
+            a.hovericon:before {
                 content:'\201c';
                 color: $grey-light;
                 position: absolute;
@@ -496,15 +495,14 @@ header.site-header nav {
             margin-bottom: $lh*2;
             position: relative;
 
-            a {
-                font-family: 'Calendas Plus Italic';
+            a.hovericon {
                 position: relative;
                 &:hover {
                     @include transit;
                 }
             }
 
-            a:hover:before {
+            a.hovericon:hover:before {
                 content:'...';
                 color: $grey-light;
                 font-family: $sans;
@@ -517,7 +515,7 @@ header.site-header nav {
                 @include transit;
             }
 
-            a:before {
+            a.hovericon:before {
                 content:'\201c';
                 color: $grey-light;
                 position: absolute;
