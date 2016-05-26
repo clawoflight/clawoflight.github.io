@@ -45,14 +45,14 @@ markdown:    kramdown
 encoding: UTF-8
 
 kramdown:
-  input: markdown
+  input: kramdown
   auto_ids: true
   footnote_nr: 1
   entity_output: as_char
   toc_levels: 1..6
   enable_coderay: false
 
-  smart_quotes: ["lsquo", "rsquo", "ldquo", "rdquo"]
+  #smart_quotes: ["lsquo", "rsquo", "ldquo", "rdquo"]
 
   #syntax_highlighter_opts:
     #disable : true

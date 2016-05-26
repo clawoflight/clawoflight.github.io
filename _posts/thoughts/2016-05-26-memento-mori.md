@@ -1,7 +1,7 @@
 ---
 title: Make your time count.
 category: thoughts
-description: "\"Week after week of careful preparation for his sequential expository preaching produced a soaring view of God that caused Calvin's mind and heart to be stayed upon his Redeemer.\""
+description: "“Week after week of careful preparation for his sequential expository preaching produced a soaring view of God that caused Calvin's mind and heart to be stayed upon his Redeemer.”"
 tags: ['God', 'Scripture', 'Spirit', 'Holy', 'Bible', 'time', 'wise', 'steward']
 published: true
 comments: true
@@ -11,7 +11,7 @@ image:
   source: "Reformation Wall, © 2013 <a href='https://commons.wikimedia.org/wiki/File:Genf_15_Calvin_Knox.JPG'>Traumrune</a> (CC-BY 3.0)"
 ---
 
-I have thought quite a bit about how I spend my time in the past weeks. A lot - if not most - of what we do is utterly futile. I see this more than usual because my studies take up so much of my time that I can't do much else, which makes me think thrice about anything I do.
+I have "thought" quite a bit about how I spend my time in the past weeks. A lot -- if not most -- of what we do is utterly futile. I see this more than usual because my studies take up so much of my time that I can't do much else, which makes me think thrice about anything I do.
 
 Besides the time I spend with God one way or another (be it in Church, reading the Bible or anything else), I read books, try to find time to spend with friends and play the occasional computer game. I listen to a few podcasts and an extra sermon every once in a while.
 
