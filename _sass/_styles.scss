@@ -394,6 +394,7 @@ header.site-header nav {
             position: relative;
 
             a {
+                font-family: 'Calendas Plus Italic';
                 position: relative;
                 &:hover {
                     @include transit;
@@ -429,7 +430,7 @@ header.site-header nav {
 
             h1 {
                 font-size: $fs3;
-                font-style: italic;
+                font-family: 'Calendas Plus Italic';
             }
         }
         .summary {
@@ -496,6 +497,7 @@ header.site-header nav {
             position: relative;
 
             a {
+                font-family: 'Calendas Plus Italic';
                 position: relative;
                 &:hover {
                     @include transit;
@@ -531,7 +533,7 @@ header.site-header nav {
 
             h1 {
                 font-size: $fs3;
-                font-style: italic;
+                font-family: 'Calendas Plus Italic';
             }
         }
 
