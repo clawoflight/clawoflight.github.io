@@ -1,7 +1,7 @@
 ---
 title: "So, You Want to Build Me a Temple?"
 category: scripture
-description: "King David wants build God a temple. The text allows for interesting lessons about love for God, humility, and worship."
+description: "King David wants to build God a temple. The text allows for interesting lessons about love for God, humility, and worship."
 tags: ['God', 'Scripture', 'Spirit', 'Holy', 'Bible', 'humility', 'love', 'worship', 'King David', 'covenant ark', 'temple', 'providence', '2 Samuel 7', 'creator', 'give God', 'honor', 'glory' ]
 published: true
 comments: true
