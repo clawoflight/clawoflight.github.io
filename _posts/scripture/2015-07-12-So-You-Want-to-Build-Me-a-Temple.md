@@ -6,6 +6,7 @@ tags: ['God', 'Scripture', 'Spirit', 'Holy', 'Bible', 'humility', 'love', 'worsh
 published: true
 comments: true
 date: 2015-07-12
+modified: 2016-05-27
 image:
   feature: https://upload.wikimedia.org/wikipedia/commons/e/e8/Jerus-n4i.jpg
   source: <a href="https://en.wikipedia.org/wiki/File:Jerus-n4i.jpg">Wikipedia</a>, public domain
