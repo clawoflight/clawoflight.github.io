@@ -26,6 +26,6 @@ I am currently reading a great [book][calvin] about Calvin's preaching. I quote 
 
 >Week after week of careful preparation for his sequential expository preaching produced a soaring view of God that caused Calvin's mind and heart to be stayed upon his Redeemer.
 
-I will try to do more and more of that. I want to soak so much of God's Word that God becomes the highest, most magnificent object of my thought.
+I will try to do more and more of that. I want to soak up so much of God's Word that God becomes the highest, most magnificent object of my thought.
 
 [calvin]: https://www.goodreads.com/book/show/2640166-the-expository-genius-of-john-calvin

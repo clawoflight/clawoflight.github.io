@@ -63,7 +63,7 @@ small {
 }
 
 blockquote, blockquote p {
-    font-style: italic;
+    font-family: "Calendas Plus Italic";
     line-height: 1.4em;
     text-align: center;
     color: lighten($black, .2);
@@ -591,7 +591,7 @@ header.site-header nav {
     }
 
     h1 {
-        font-style: italic;
+        font-family: 'Calendas Plus Italic';
     }
 
     h1, h2, h3, h4, h5 {
