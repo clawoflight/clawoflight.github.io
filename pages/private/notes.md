@@ -11,20 +11,21 @@ permalink: /notes/index.html
 	+ writing a book
 	+ teaching
 	+ prioritizing the study of the word above all else
-- Tabletop
-	+ 40K gameplay vs. Bolt Action gameplay: time spent moving/thinking as opposed to rolling dices and looking up numbers
-	+ Hobby: podcasts/sermons
-	+ WW2 realism gives me much more to relate with
-- Thinking clearly
-	+ Relaxing enough through faith in God's provision
-	+ Rest instead of overworking, sleep enough
-	+ Not through my strength, but his
 
 ## Talk With Lukas
 
 - Reading
-	+ PJs → So much dedication
-	+ Calvin → He constantly thinks about God's glory
-- Bolt Action: WW2 is an amazing setting, especially for game-play and scenarios -- and there are *so many options!*
-- Stellaris
-- Esperanto (Bible is the most valuable thing, I think)
+	+ Calvin and Edwards think so much about God's glory
+	+ Reading more, especially military, history
+	+ SPQR wasn't great, but it's not bad
+	+ Did you start Clear and Present Danger?
+- Work
+	+ Tough, but it feels god to be advancing my marriage
+	+ It's nice to relax completely over the weekend
+- Bolt Action
+	+ Second edition coming in fall --> start painting and buy the rules later
+	+ History does it for me
+	+ Strategic gameplay
+	+ A lot of choice in the small things
+- Stellaris/Hearts of Iron
+- Esperanto (Bible reading is the most valuable thing, I think)
