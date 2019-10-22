@@ -31,9 +31,6 @@ links:
     url: /about
   - title: Blog
     url: /blog
-  - title: Photography
-    url: https://photography.piater.name
-    external: true
   #- title: Cole Who?
   #  url: http://coletownsend.com
   #  external: true
