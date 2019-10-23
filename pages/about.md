@@ -16,7 +16,7 @@ My blog-posts will mostly fit into one of a few categories, each of which has it
 * [Scripture]({{ site.url }}/blog/scripture)
 * [Announcements]({{ site.url }}/blog/announcements)
 * [Thoughts]({{ site.url }}/blog/thoughts)
-* [Programming]({{ site.url }}/blog/programming)
+* [Linux & Programming]({{ site.url }}/blog/linux)
 
 I also have an [RSS-Feed]({{ site.url }}/feed.xml).
 
