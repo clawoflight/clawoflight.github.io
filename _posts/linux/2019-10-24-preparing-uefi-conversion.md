@@ -1,7 +1,8 @@
 ---
-title: Migrating an Ubuntu Server installation from BIOS to UEFI (Part 1)
-category: announcements
+title: Making Room for ESP
+category: linux
 published: true
+description: Migrating an Ubuntu Server installation from BIOS to UEFI: Part 1
 comments: false
 date: 2019-10-23
 ---
