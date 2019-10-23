@@ -2,12 +2,12 @@
 title: Making Room for ESP
 category: linux
 published: true
-description: Migrating an Ubuntu Server installation from BIOS to UEFI: Part 1
+description: "Migrating an Ubuntu Server installation from BIOS to UEFI: Part 1"
 comments: false
 date: 2019-10-23
 ---
 
-I recently tried rebooting my NAS into a thumb drive with a custom Arch Linux maintenance image (containing the ZFS kernel modules and directly accessible over SSH).
+I recently tried rebooting my NAS into a thumb drive with a custom Arch Linux maintenance image (containing the ZFS kernel modules and directly accessible over SSH).<br/>
 After a quick Google, I found that `efibootmgr` should be capable of doing that in one command --- until I realized that I was booted in BIOS mode, not UEFI.
 Some investigation later, I think the reason is that I used a non-UEFI-compatible GPU for the installation, which caused the Mainboard to boot in CSM mode.
 
@@ -28,26 +28,23 @@ Thankfully, I use LVM on root and had a lot of breathing room, so I did not need
 
 Just to be sure that a reboot would work, because I have little experience with LVM, I also checked a few things:
 
-* Do the UUIDs still match the values in the fstab? (`sudo blkid /dev/mapper/ubuntu--vg-ubuntu--lv /boot && cat /etc/fstab`)
+* Do the UUIDs still match the values in the fstab?
+
+{% highlight bash %}
+sudo blkid /dev/mapper/ubuntu--vg-ubuntu--lv /boot && cat /etc/fstab
+{% endhighlight %}
 
 * Do the LV and VG UUIDs still match the values passed to the kernel? (`sudo vgdisplay && sudo lvdisplay && cat /boot/grub/grub.cfg`)
-  where grub.cfg contains 'lvmid/VGUUID/LVUUID' multiple times.
+  where grub.cfg contains 'lvmid/$VGUUID/$LVUUID' multiple times.
 
-  {% highlight %}\
-  set root='lvmid/dFkRYx-xI3s-oKSh-E2dA-DRma-oNwm-fuoe9W/AF86OL-Ginq-fbrD-fdoh-slPc-NSA1-isgdSN'
-  if [ x$feature*platform*search_hint = xy ]; then
-  search --no-floppy --fs-uuid --set=root --hint='lvmid/dFkRYx-xI3s-oKSh-E2dA-DRma-oNwm-fuoe9W/AF86OL-Ginq-fbrD-fdoh-slPc-NSA1-isgdSN
-  ' e2281bec-de5f-406b-815e-cb81b2c80619
-  {% endhighlight %}
-
-  If this hadn't matched, I would have run `sudo update-grub`and hoped for the best.
-  But apparently LVM UUIDs are independent of partition UUIDs, so I did not run into any problems with this at any step, even after resizing the physical partition.
+If this hadn't matched, I would have run `sudo update-grub` and hoped for the best.
+But apparently LVM UUIDs are independent of partition UUIDs, so I did not run into any problems with this at any step, even after resizing the physical partition.
 
 ### Creating an ESP
 
   Now, the next step is to resize the partition containing the LVM PV. To be sure I don't overwrite everything, I left some buffer between the partitions. And just to remove any unit conversion ambiguity, I calculated everything in sector sizes.
 
-  {% highlight %}
+  {% highlight console %}
   sudo pvs --units s
   [sudo] password for bennett:
   PV VG Fmt Attr PSize PFree
@@ -59,11 +56,10 @@ Just to be sure that a reboot would work, because I have little experience with 
   Partitions cannot be resized, so the LVM partition needs to be deleted and re-created smaller.
   Be sure to use the sector size shown in `pvs` as the new partition size.
 
-  Now we can create the ESP, which I did using `gdisk` to easily set the label (to "ESP" because I am very creative). Let's update the kernel's view of the drive with `sudo partprobe /dev/sdd`. The final step is to create the file system - UEFI expects FAT32/VFAT: `sudo mkfs -t vfat -v /dev/disk/by-partlabel/ESP`
+  Now we can create the ESP, which I did using `gdisk` to easily set the label (to "ESP" because I am very creative). Let's update the kernel's view of the drive with `sudo partprobe /dev/sdd`. The final step is to create the file system -- UEFI expects FAT32/VFAT -- and mount the partition:
 
-  The final step is to mount the partition:
-
-  {% highlight %}
+  {% highlight bash %}
+  sudo mkfs -t vfat -v /dev/disk/by-partlabel/ESP
   sudo mkdir /boot/efi
   echo /dev/disk/by-partlabel/ESP /boot/efi vfat defaults 0 2 | sudo tee -a /etc/fstab
   sudo mount /boot/efi
