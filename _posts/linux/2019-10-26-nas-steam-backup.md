@@ -11,6 +11,9 @@ date: 2019-10-26
 The amount of free space on my NAS made me think about other things I could be doing with it. I came up with optimizing Steam downloads:<br/>
 Since I only have 2 256GB SSDs in my gaming rig, it is fairly space-limited for modern games. So I figured I could store games that I'm not currently playing on my NAS, removing the need to re-download them or buy spinning rust disks for the gaming rig.
 
+As a bonus, it would also allow me to download games once and then distribute them to other people inside the apartment!
+That would be great for LAN parties.
+
 ### Creating a network share
 
 This is really easy thanks to ZFS:
