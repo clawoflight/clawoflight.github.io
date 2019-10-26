@@ -5,7 +5,7 @@ published: true
 tags: ['nas', 'samba', 'cifs', 'steam', 'gaming', 'windows', 'zfs']
 description: Using Steam's backup/restore feature and ZFS to speed up game downloads.
 comments: false
-date: 2019-10-25
+date: 2019-10-26
 ---
 
 The amount of free space on my NAS made me think about other things I could be doing with it. I came up with optimizing Steam downloads:<br/>
@@ -34,7 +34,7 @@ To save space, I also turned off automatic ZFS snapshots for this dataset:
 [datapool/games]
     use_template = never
 
-# ... <snip> ...
+# <snip>
 
 [template_never]
     hourly = 0
