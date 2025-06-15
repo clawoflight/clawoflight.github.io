@@ -1,26 +1,26 @@
-title:            Bennett Piater's Blog
-tagline:          Welcome to my Blog!
-description:      I will share stories about my life with the LORD as well as about reading and other interesting things.
-canonical:        http://bennett.piater.name
-url:              http://bennett.piater.name
+title: Bennett Piater's Blog
+tagline: Welcome to my Blog!
+description: I will share stories about my life with the LORD as well as about reading and other interesting things.
+canonical: https://bennett.piater.name
+url: https://bennett.piater.name
 
 # Owner/author information
 owner:
-  name:           Bennett Piater
-  avatar:         avatar.png
-  bio:            "My life belongs to the LORD. Soli Deo Gloria!"
-  email:          bennett@piater.name
-  twitter:        clawoflight
-  github:         clawoflight
+  name: Bennett Piater
+  avatar: avatar.png
+  bio: "My life belongs to the LORD. Soli Deo Gloria!"
+  email: bennett@piater.name
+  twitter: clawoflight
+  github: clawoflight
   instagram:
   dribbble:
-  disqus:         bennetts-blog
-  location:       "Innsbruck, Austria"
+  disqus: bennetts-blog
+  location: "Innsbruck, Austria"
   # Plug in your disqus shortname!
 
 tools:
-  standards:      ""
-  software:       ""
+  standards: ""
+  software: ""
 
 # Links to include in top navigation
 # For external links add external: true
@@ -36,10 +36,10 @@ links:
   #  external: true
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    Europe/Vienna
-future:      false
+timezone: Europe/Vienna
+future: false
 highlighter: rouge
-markdown:    kramdown
+markdown: kramdown
 encoding: UTF-8
 
 kramdown:
@@ -53,7 +53,7 @@ kramdown:
   #smart_quotes: ["lsquo", "rsquo", "ldquo", "rdquo"]
 
   #syntax_highlighter_opts:
-    #disable : true
+  #disable : true
 
   coderay:
     coderay_line_numbers:
@@ -72,11 +72,20 @@ gems:
 permalink: /blog/:categories/:year/:month/:day/:title/
 
 include: [".htaccess"]
-exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp"]
+exclude:
+  [
+    "lib",
+    "config.rb",
+    "Capfile",
+    "config",
+    "log",
+    "Rakefile",
+    "Rakefile.rb",
+    "tmp",
+  ]
 
 defaults:
--
-    scope:
+  - scope:
       path: ""
       type: "posts"
     values:
