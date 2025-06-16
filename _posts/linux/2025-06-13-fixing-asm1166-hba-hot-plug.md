@@ -32,13 +32,13 @@ Interestingly, my card was running firmware version 221118-0048-00, which wasn't
 
 {% highlight bash %}
 # Verify firmware can be read:
-$ ./116xfwdl -S
+$ sudo ./116xfwdl -S
 ASM116x Firmware Update Tool V1.1.1.0
 
 Dev[0]::FWver from PCIe: 21 11 08 00 48
 
 # Update firmware
-sudo ./116xfwdl -U 11080000.ROM
+$ sudo ./116xfwdl -U 11080000.ROM
 
 ASM116x Firmware Update Tool V1.1.1.0
 Found 1 ASM deiceFind a SPI flash ROM ID : 68h, 40h, 13h is not in Supported List!!!Try to program...ASM116UpdateSpiFlashRom: Chip Erase status = 0
@@ -47,9 +47,9 @@ ASM116UpdateSpiFlashRom: Write Data status = 0
 Update SPI flash ROM......PASS!!!
 
 # Reboot to load new firmware blob
-sudo reboot
+$ sudo reboot
 # Verify firmware version
-$ ./116xfwdl -S
+$ sudo ./116xfwdl -S
 ASM116x Firmware Update Tool V1.1.1.0
 
 Dev[0]::FWver from PCIe: 21 11 08 00 00 00
