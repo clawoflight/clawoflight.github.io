@@ -31,7 +31,7 @@ This helped me find to very helpful links, which I would otherwise have looked f
 Interestingly, my card was running firmware version 221118-0048-00, which wasn't working correctly for hot-swap. The firmware from Silverstone has version 221118-0000-00 and appears to be a different build with different options enabled.
 
 {% highlight bash %}
-# Verify firmware can be read:
+# Verify firmware can be read
 $ sudo ./116xfwdl -S
 ASM116x Firmware Update Tool V1.1.1.0
 
@@ -48,6 +48,7 @@ Update SPI flash ROM......PASS!!!
 
 # Reboot to load new firmware blob
 $ sudo reboot
+
 # Verify firmware version
 $ sudo ./116xfwdl -S
 ASM116x Firmware Update Tool V1.1.1.0
